@@ -1,0 +1,38 @@
+.theme-pannel-main {
+   
+    position: sticky;
+    display: flex;
+    bottom: 95%;
+    left: 100%;
+    z-index: 9;
+    padding: 0 5px;
+    box-shadow: 0 0 7px 1px rgb(158 158 158 / 20%);
+    border-radius: 30px 0px 0px 15px;
+    width: 5%;
+    height: 2rem;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #A9844588;
+  }
+  .logo {
+   
+    position: sticky !important;
+    display: flex !important;
+    bottom: 95% !important;
+    right:100% !important;
+    z-index: 1;
+    padding: 0 5px;
+  
+    /* width: 8rem;
+    height: 5rem; */
+    /* align-self: center;
+    align-items: center;
+    justify-content: center; */
+  }
+ .offcanvas{
+  height: 100vh !important;
+  background-color: #A98445 !important;
+  display: flex !important;
+  opacity: .9;
+ }

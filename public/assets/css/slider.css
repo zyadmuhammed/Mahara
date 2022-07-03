@@ -1,0 +1,139 @@
+.homedesc p{
+    font-size: 1rem;
+    color: #fff;
+}
+.homedesc b{
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .homedesc{
+        display: flex;
+        align-items: flex-start;
+        width: 20rem;
+        height: 10rem;
+        background-color: #00000088;
+        border-radius: 40px 20px 40px 0px;
+        position: fixed;
+        left: 2rem;
+        bottom: 2rem;
+        padding: 2rem;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    
+    }
+    .homedesc p{
+        font-size: .7rem;
+       
+    }
+    .homedesc b{
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .homedesc{
+        display: flex;
+        align-items: flex-start;
+        width: 30rem;
+        height: 15rem;
+        background-color: #00000088;
+        border-radius: 40px 20px 40px 0px;
+        position: fixed;
+        left: 2rem;
+        bottom: 2rem;
+        padding: 2rem;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {   
+     .homedesc{
+    display: flex;
+    align-items: flex-start;
+    width: 30rem;
+    height: 15rem;
+    background-color: #00000088;
+    border-radius: 40px 20px 40px 0px;
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .homedesc{
+        display: flex;
+        align-items: flex-start;
+        width: 40rem;
+        height: 20rem;
+        background-color: #00000088;
+        border-radius: 40px 20px 40px 0px;
+        position: fixed;
+        left: 2rem;
+        bottom: 2rem;
+        padding: 2rem;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+}
+
+@-webkit-keyframes rollIn {
+    0% { 
+       opacity: 0; 
+       -webkit-transform: translateX(-100%) rotate(-120deg); 
+    }
+    100% { 
+       opacity: 1; 
+       -webkit-transform: translateX(0px) rotate(0deg); 
+    }
+ }
+ 
+ @keyframes rollIn {
+    0% { 
+       opacity: 0; 
+       transform: translateX(-100%) rotate(-120deg); 
+    }
+    100% { 
+       opacity: 1; 
+       transform: translateX(0px) rotate(0deg); 
+    }
+ }
+ .rollIn {
+    -webkit-animation-name: rollIn;
+    animation-name: rollIn;
+ }

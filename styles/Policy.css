@@ -1,0 +1,60 @@
+.policy {
+  background: #f1f1f1;
+  padding: 30px;
+}
+.info-box {
+  background: #fff;
+  border-radius: 10px;
+  color: #415259;
+  position: relative;
+  padding: 65px 0;
+}
+.info-box h3 {
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  font-weight: inherit;
+  line-height: 1.6;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 37%;
+  left: 4%;
+}
+.icon-1 {
+  background: #415259;
+}
+
+.icon-2 {
+  background: #c9c3ad;
+}
+
+.icon-3 {
+  background: #d8a115;
+}
+
+.icon-4 {
+  background: #723b1c;
+}
+
+.icon-5 {
+  background: #242e40;
+}
+
+.icon-6 {
+  background: #310e13;
+}
+
+@media (max-width: 991.98px) {
+  .info-box h3 {
+    font-size: 20px;
+    left: 20%;
+    top: 35%;
+  }
+  .policy {
+    padding: 0;
+  }
+}
