@@ -13,7 +13,7 @@ const BottomTap = () => {
         <>
             <Row style={{backgroundColor:'#415259',width:'100%',height:'100%',padding:100}}> 
                     <div className='col border-end' >
-                        <Image src="/assets/images/pdf.png"  alt="P"/>
+                        <img  src="/assets/images/pdf.png"  alt="P"/>
                         <p style={{color:'white'}}> Download</p>
                     </div>
                     <div className='col'>

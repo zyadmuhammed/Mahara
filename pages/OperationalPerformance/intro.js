@@ -10,7 +10,7 @@ import Image from 'next/image'
     return (
         <div>
             <section>
-                    <Image src={'/assets/images/StrategicReports.png'}  alt="image" className="img-fluid" />
+                    <img  src={'/assets/images/StrategicReports.png'}  alt="image" className="img-fluid" />
                     <div className="titleIntro">
                         <h1>
                         Operational Performance

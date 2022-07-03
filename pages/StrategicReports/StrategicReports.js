@@ -92,7 +92,7 @@ export default function StrategicReports() {
       <section style={{ paddingTop: "3rem" }}>
         <div className="row">
           <div className="col">
-            <Image src={vision} alt="vision" />
+            <img  src={vision} alt="vision" />
             <h5>Vision</h5>
             <p>
               Leading the human resources sector by providing comprehensive &
@@ -101,7 +101,7 @@ export default function StrategicReports() {
             </p>
           </div>
           <div className="col">
-            <Image src={mission} alt="mission" />
+            <img  src={mission} alt="mission" />
             <h5>Mission</h5>
             <p>
               We are working on providing innovative and integrated human
@@ -111,7 +111,7 @@ export default function StrategicReports() {
             </p>
           </div>
           <div className="col">
-            <Image src={values} alt="values" />
+            <img  src={values} alt="values" />
             <h5>Values</h5>
             <p>
               Creation and innovation, integrity and transparency, quality and
@@ -346,7 +346,7 @@ export default function StrategicReports() {
             </div>
             <div className="row d-flex">
               <div className="col-6">
-                <Image
+                <img 
                   src="assets/images/image.png"
                   className="img-fluid"
                   alt="img"
@@ -584,7 +584,7 @@ export default function StrategicReports() {
                 </span>
               </div>
               <div className="col d-flex justify-content-center">
-                <Image
+                <img 
                   src="/assets/images/salis.png"
                   alt="salis.png"
                   className="img-fluid"
@@ -787,7 +787,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <Image
+                      <img 
                         src={"/assets/images/senior.png"}
                         //style={{ width: "20%", height: "20%" }}
                         className="img-fluid"
@@ -811,7 +811,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <Image
+                      <img 
                         src={"/assets/images/XMLID.png"}
                         className="img-fluid"
                         alt="icon"
@@ -833,7 +833,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <Image
+                      <img 
                         src={"/assets/images/strong.png"}
                         className="img-fluid"
                         alt="icon"
@@ -853,7 +853,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <Image
+                      <img 
                         src={"/assets/images/code.png"}
                         className="img-fluid"
                         alt="icon"
@@ -873,7 +873,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <Image
+                      <img 
                         src={"/assets/images/world.png"}
                         className="img-fluid"
                         alt="icon"
@@ -911,7 +911,7 @@ export default function StrategicReports() {
                               : "none",
                         }}
                       >
-                        <Image
+                        <img 
                           className="img-fluid"
                           alt="image"
                           src="/assets/images/spectra.png"
@@ -927,7 +927,7 @@ export default function StrategicReports() {
                             divActive == "gaic" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <Image
+                        <img 
                         alt="image"
                           className="img-fluid"
                           src="/assets/images/gaic.png"
@@ -945,7 +945,7 @@ export default function StrategicReports() {
                             divActive == "nabd" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <Image
+                        <img 
                           className="img-fluid"
                           src="/assets/images/nabd.png"
                           alt="image"
@@ -961,7 +961,7 @@ export default function StrategicReports() {
                             divActive == "shifa" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <Image
+                        <img 
                           className="img-fluid"
                           src="/assets/images/shifa.png"
                           alt="image"
@@ -979,7 +979,7 @@ export default function StrategicReports() {
                             divActive == "tph" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <Image
+                        <img 
                           className="img-fluid"
                           src="/assets/images/tph.png"
                           alt="image"
@@ -997,7 +997,7 @@ export default function StrategicReports() {
                               : "none",
                         }}
                       >
-                        <Image
+                        <img 
                           className="img-fluid"
                           alt="image"
                           src="/assets/images/bloovo.png"
@@ -1022,7 +1022,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <Image
+                      <img 
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/spectraf.png"
@@ -1072,7 +1072,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <Image
+                      <img 
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/gaic.png"
@@ -1119,7 +1119,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <Image
+                      <img 
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/nabdf.png"
@@ -1175,7 +1175,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <Image
+                      <img 
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/shifaf.png"
@@ -1234,7 +1234,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <Image
+                      <img 
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/tphf.png"
@@ -1315,7 +1315,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <Image
+                      <img 
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/bloovo.png"

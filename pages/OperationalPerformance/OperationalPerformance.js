@@ -132,7 +132,7 @@ export default function OperationalPerformance() {
                           alignItems: "center",
                         }}
                       >
-                        <Image
+                        <img 
                           style={{
                             width: "15%",
                             height: "15%",
@@ -167,7 +167,7 @@ export default function OperationalPerformance() {
                           alignItems: "center",
                         }}
                       >
-                        <Image
+                        <img 
                           style={{
                             width: "15%",
                             height: "15%",
@@ -294,7 +294,7 @@ export default function OperationalPerformance() {
           <div className="col-md-3 col-3 col-lg-3 col-sm-3 st ">
             <div className="row">
               <div className="col-3">
-                <Image src="/assets/images/row1.png" className="img-style" alt="Iamge"/>
+                <img  src="/assets/images/row1.png" className="img-style" alt="Iamge"/>
               </div>
               <div className="col-9"> Training hours</div>
             </div>
@@ -321,7 +321,7 @@ export default function OperationalPerformance() {
           <div className="col-md-3 col-3 col-lg-3 col-sm-3 st">
             <div className="row">
               <div className="col-3">
-                <Image src="/assets/images/row2.png" className="img-style" alt="Iamge"/>
+                <img  src="/assets/images/row2.png" className="img-style" alt="Iamge"/>
               </div>
               <div className="col-9">Completion</div>
             </div>{" "}
@@ -347,7 +347,7 @@ export default function OperationalPerformance() {
           <div className="col-md-3 col-3 col-lg-3 col-sm-3 st">
             <div className="row">
               <div className="col-3">
-                <Image src="/assets/images/row3.png" className="img-style" alt="Iamge"/>
+                <img  src="/assets/images/row3.png" className="img-style" alt="Iamge"/>
               </div>
               <div className="col-9"> Trainee </div>
             </div>{" "}
@@ -373,7 +373,7 @@ export default function OperationalPerformance() {
           <div className="col-md-3 col-3 col-lg-3 col-sm-3 st">
             <div className="row">
               <div className="col-3">
-                <Image src="/assets/images/row4.png" className="img-style"alt="Iamge" />
+                <img  src="/assets/images/row4.png" className="img-style"alt="Iamge" />
               </div>
               <div className="col-9"> Online Training</div>
             </div>{" "}

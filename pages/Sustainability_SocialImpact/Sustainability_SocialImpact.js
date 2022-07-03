@@ -41,21 +41,21 @@ export default function SustainabilitySocialImpact() {
           <section style={{ paddingTop: "3rem" }}>
             <div className="row">
               <div className="col">
-                <Image src={vision} alt="vision" />
+                <img  src={vision} alt="vision" />
                 <h5>Vision</h5>
                 <p>
                 Contributing to the community sustainability and service and to having a positive effect to build a developed and vital community.
                 </p>
               </div>
               <div className="col">
-                <Image src={mission} alt="mission" />
+                <img  src={mission} alt="mission" />
                 <h5>Mission</h5>
                 <p>
                 Stemming from our belief that the company social responsibility is a religious and moral duty, and by way of achieving the social solidarity and cooperation, we have laid down the main pillars for the provision of social responsibility practices, in line with the Kingdom Vision 2030 and UN Sustainable Development Program.
                 </p>
               </div>
               <div className="col">
-                <Image src={Pillars} alt="Pillars" />
+                <img  src={Pillars} alt="Pillars" />
                 <h5>Pillars</h5>
                 <p>
                 Providing support to the third sector and community members to achieve the transition from pastoral work to development in order to contribute to the sustainable development. 

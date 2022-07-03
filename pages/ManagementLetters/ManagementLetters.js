@@ -48,7 +48,7 @@ export default function ManagementLetters() {
                 <Col lg='4' className="reveal fade-left">
                     
                     <div>
-                            <Image
+                            <img 
                                 src={chairman}
                                 layout="fixed"
                                 alt="ChairMan"
@@ -136,7 +136,7 @@ export default function ManagementLetters() {
                     <div>
                      {/* <h1 style={{color:'#a98445'}}> Chief Executive Officer's </h1>
                      <h1 style={{color:'#415259'}}> Letters</h1> */}
-                            <Image
+                            <img 
                                 src={chiefExecutive}
                                 layout="fixed"
                                 alt="chiefExecutive"

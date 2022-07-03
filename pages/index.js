@@ -24,12 +24,14 @@ export default function Home() {
       
 
      <main className={styles.main}>
-     <Image
+     <img
      className='logo'
                 src={'/assets/images/Logo.png'}
                 alt="home"
+               
+              //  layout="responsive"
                 />
-        <Image src={"assets/images/wallpaper.png"} alt="home" className="img-fluid" />
+        <img  src={"/assets/images/wallpaper.png"} alt="home" layout='fill' className="img-fluid" />
         
         
        <SliderHome/>

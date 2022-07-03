@@ -103,7 +103,7 @@ export default function Services_Solution() {
                   alignItems: "center",
                 }}
               >
-                <Image
+                <img 
                   src={"/assets/images/Retail.png"}
                   style={{ width: "20%", height: "20%" }}
                   alt="icon"
@@ -122,7 +122,7 @@ export default function Services_Solution() {
                   alignItems: "center",
                 }}
               >
-                <Image
+                <img 
                   src={"/assets/images/Hospitality.png"}
                   style={{ width: "20%", height: "20%" }}
                   alt="icon"
@@ -142,7 +142,7 @@ export default function Services_Solution() {
                   alignItems: "center",
                 }}
               >
-                <Image
+                <img 
                   src={"/assets/images/MedicalSector.png"}
                   style={{ width: "20%", height: "20%" }}
                   alt="icon"
@@ -161,7 +161,7 @@ export default function Services_Solution() {
                   alignItems: "center",
                 }}
               >
-                <Image
+                <img 
                   src={"/assets/images/Industrial.png"}
                   style={{ width: "20%", height: "20%" }}
                   alt="icon"
@@ -180,7 +180,7 @@ export default function Services_Solution() {
                   alignItems: "center",
                 }}
               >
-                <Image
+                <img 
                   src={"/assets/images/Commercial.png"}
                   style={{ width: "20%", height: "20%" }}
                   alt="icon"
@@ -199,7 +199,7 @@ export default function Services_Solution() {
                   alignItems: "center",
                 }}
               >
-                <Image
+                <img 
                   src={"/assets/images/GovernmentSector.png"}
                   style={{ width: "20%", height: "20%" }}
                   alt="icon"
@@ -218,7 +218,7 @@ export default function Services_Solution() {
           </div>
           <div className="row d-flex justify-content-center align-items-center">
             <div className="col-4">
-              <Image src={"/assets/images/Esnad-Logo.png"} alt="Esnad" />
+              <img  src={"/assets/images/Esnad-Logo.png"} alt="Esnad" />
             </div>
             <div className="col-8 esnad ">
               <ul>
@@ -262,7 +262,7 @@ export default function Services_Solution() {
                   }}
                 >
                   <div className="col-4">
-                    <Image
+                    <img 
                       src={"/assets/images/md-home.png"}
                       style={{ width: "50%", height: "50%" }}
                       alt="icon"
@@ -287,7 +287,7 @@ export default function Services_Solution() {
                   }}
                 >
                   <div className="col-4">
-                    <Image
+                    <img 
                       src={"/assets/images/timer.png"}
                       style={{ width: "50%", height: "50%" }}
                       alt="icon"
@@ -327,7 +327,7 @@ export default function Services_Solution() {
                   </span>
                 </div>
                 <div className="col">
-                  <Image
+                  <img 
                     src={"/assets/images/mobile.png"}
                     style={{ width: "65%", height: "80%" }}
                     alt="icon"
