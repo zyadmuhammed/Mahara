@@ -1,7 +1,6 @@
 import React from "react";
-import { Col, Container, Row ,Button} from "reactstrap";
+import {Button} from "reactstrap";
 import Image from "next/image";
-import ManagementLetters from '../../public/assets/images/letters.png'
 import {MdKeyboardArrowDown} from'react-icons/md'
 import Link from 'next/link';
 
@@ -11,7 +10,7 @@ import Link from 'next/link';
     return (
         <div>
             <section>
-            <img src={'/assets/images/letters.png'} className='img-fluid' alt="ManagementLetters"  />
+            <Image src={'/assets/images/letters.png'} className='img-fluid' alt="ManagementLetters"  />
                     {/* <Image src={ManagementLetters} alt="ManagementLetters" layout='responsive' /> */}
                     <div className="titleIntro">
                         <h1>
@@ -26,7 +25,7 @@ import Link from 'next/link';
                         <Link href="#Chairman">
                             <Button className="btnHomesideOne"  variant="light" >
                                 <span style={{textAlign:'center' }}>
-                                      Chairman's Letters<br/> <MdKeyboardArrowDown color="#fff" size={24}/>
+                                      Chairman&apos;s Letters<br/> <MdKeyboardArrowDown color="#fff" size={24}/>
                                 </span>
                                 
                             </Button> 
@@ -48,4 +47,5 @@ import Link from 'next/link';
     );
     
    });
+   Intro.displayName="Intro"
    export default  Intro;

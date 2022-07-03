@@ -33,7 +33,7 @@ export default function ManagementLetters() {
             <div>
                 <Row>
                 <Col sm='4' style={{textAlign:'center'}} className='reveal fade-left'>
-                    <h1 style={{color:'#a98445'}}>Chairman's </h1>
+                    <h1 style={{color:'#a98445'}}>Chairman&apos;s </h1>
                     
                     <h1 style={{color:'#415259'}}> Letters</h1>
                 </Col>
@@ -120,7 +120,7 @@ export default function ManagementLetters() {
            <div>
                 <Row>
                 <Col sm='4' style={{textAlign:'center'}} className='reveal fade-left'>
-                    <h1 style={{color:'#a98445'}}> Chief Executive Officer's </h1>
+                    <h1 style={{color:'#a98445'}}> Chief Executive Officer&apos;s </h1>
                     <h1 style={{color:'#415259'}}> Letters</h1>
                 </Col>
                 <Col sm='8'>

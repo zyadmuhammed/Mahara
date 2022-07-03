@@ -5,7 +5,8 @@ import useTranslation from "next-translate/useTranslation";
 import { SliderHome } from "../components/slider";
 import  wallpaper  from "../public/assets/images/wallpaper.png";
 import React,{useEffect,useState} from 'react';
- 
+
+ // eslint-disable-next-line react/display-name
 export default function Home() {
   let { t } = useTranslation("common");
   const [ mounted, setMounted ] = useState(false);
@@ -23,12 +24,12 @@ export default function Home() {
       
 
      <main className={styles.main}>
-     <img
+     <Image
      className='logo'
                 src={'/assets/images/Logo.png'}
                 alt="home"
                 />
-        <img src={"assets/images/wallpaper.png"} className="img-fluid" />
+        <Image src={"assets/images/wallpaper.png"} alt="home" className="img-fluid" />
         
         
        <SliderHome/>
@@ -40,3 +41,4 @@ export default function Home() {
     </div>
   ):null
 }
+Home.displayName = 'Mahara';

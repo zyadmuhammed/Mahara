@@ -1,11 +1,10 @@
-import react, { useEffect } from "react";
+
 import { Col, Container, Row } from "reactstrap";
 import Image from "next/image";
-import chairman from "../../public/assets/images/chairman.png";
-import chiefExecutive from "../../public/assets/images/chiefExecutive.png";
-import { FaUserTie } from "react-icons/fa";
+
 import CountUp from "react-countup";
 import { Chart } from "react-google-charts";
+
 
 export default function OperationalPerformance() {
   // let { t } = useTranslation("common");
@@ -133,7 +132,7 @@ export default function OperationalPerformance() {
                           alignItems: "center",
                         }}
                       >
-                        <img
+                        <Image
                           style={{
                             width: "15%",
                             height: "15%",
@@ -168,7 +167,7 @@ export default function OperationalPerformance() {
                           alignItems: "center",
                         }}
                       >
-                        <img
+                        <Image
                           style={{
                             width: "15%",
                             height: "15%",
@@ -295,7 +294,7 @@ export default function OperationalPerformance() {
           <div className="col-md-3 col-3 col-lg-3 col-sm-3 st ">
             <div className="row">
               <div className="col-3">
-                <img src="/assets/images/row1.png" className="img-style" />
+                <Image src="/assets/images/row1.png" className="img-style" alt="Iamge"/>
               </div>
               <div className="col-9"> Training hours</div>
             </div>
@@ -322,7 +321,7 @@ export default function OperationalPerformance() {
           <div className="col-md-3 col-3 col-lg-3 col-sm-3 st">
             <div className="row">
               <div className="col-3">
-                <img src="/assets/images/row2.png" className="img-style" />
+                <Image src="/assets/images/row2.png" className="img-style" alt="Iamge"/>
               </div>
               <div className="col-9">Completion</div>
             </div>{" "}
@@ -348,7 +347,7 @@ export default function OperationalPerformance() {
           <div className="col-md-3 col-3 col-lg-3 col-sm-3 st">
             <div className="row">
               <div className="col-3">
-                <img src="/assets/images/row3.png" className="img-style" />
+                <Image src="/assets/images/row3.png" className="img-style" alt="Iamge"/>
               </div>
               <div className="col-9"> Trainee </div>
             </div>{" "}
@@ -374,7 +373,7 @@ export default function OperationalPerformance() {
           <div className="col-md-3 col-3 col-lg-3 col-sm-3 st">
             <div className="row">
               <div className="col-3">
-                <img src="/assets/images/row4.png" className="img-style" />
+                <Image src="/assets/images/row4.png" className="img-style"alt="Iamge" />
               </div>
               <div className="col-9"> Online Training</div>
             </div>{" "}

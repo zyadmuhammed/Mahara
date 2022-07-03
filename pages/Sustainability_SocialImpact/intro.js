@@ -2,14 +2,14 @@ import React from "react";
 import { Col, Container, Row ,Button} from "reactstrap";
 import {MdKeyboardArrowDown} from'react-icons/md'
 import Link from 'next/link';
-
+import Image from 'next/image'
  const Intro = React.forwardRef((ref) => {
    
     // let { t } = useTranslation("common");
     return (
         <div>
             <section>
-                    <img src={'/assets/images/StrategicReports.png'}  alt="image" className="img-fluid" />
+                    <Image src={'/assets/images/StrategicReports.png'}  alt="image" className="img-fluid" />
                     <div className="titleIntro">
                         <h1>
                         Sustainability
@@ -38,4 +38,5 @@ import Link from 'next/link';
     );
     
    });
+   Intro.displayName="Sustainability"
    export default  Intro;

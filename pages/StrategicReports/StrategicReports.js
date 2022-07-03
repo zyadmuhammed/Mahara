@@ -346,7 +346,7 @@ export default function StrategicReports() {
             </div>
             <div className="row d-flex">
               <div className="col-6">
-                <img
+                <Image
                   src="assets/images/image.png"
                   className="img-fluid"
                   alt="img"
@@ -584,7 +584,7 @@ export default function StrategicReports() {
                 </span>
               </div>
               <div className="col d-flex justify-content-center">
-                <img
+                <Image
                   src="/assets/images/salis.png"
                   alt="salis.png"
                   className="img-fluid"
@@ -787,7 +787,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img
+                      <Image
                         src={"/assets/images/senior.png"}
                         //style={{ width: "20%", height: "20%" }}
                         className="img-fluid"
@@ -811,7 +811,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img
+                      <Image
                         src={"/assets/images/XMLID.png"}
                         className="img-fluid"
                         alt="icon"
@@ -833,7 +833,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img
+                      <Image
                         src={"/assets/images/strong.png"}
                         className="img-fluid"
                         alt="icon"
@@ -853,7 +853,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img
+                      <Image
                         src={"/assets/images/code.png"}
                         className="img-fluid"
                         alt="icon"
@@ -873,7 +873,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img
+                      <Image
                         src={"/assets/images/world.png"}
                         className="img-fluid"
                         alt="icon"
@@ -911,8 +911,9 @@ export default function StrategicReports() {
                               : "none",
                         }}
                       >
-                        <img
+                        <Image
                           className="img-fluid"
+                          alt="image"
                           src="/assets/images/spectra.png"
                         />{" "}
                       </div>
@@ -926,7 +927,8 @@ export default function StrategicReports() {
                             divActive == "gaic" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <img
+                        <Image
+                        alt="image"
                           className="img-fluid"
                           src="/assets/images/gaic.png"
                         />{" "}
@@ -943,9 +945,10 @@ export default function StrategicReports() {
                             divActive == "nabd" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <img
+                        <Image
                           className="img-fluid"
                           src="/assets/images/nabd.png"
+                          alt="image"
                         />{" "}
                       </div>
                     </div>
@@ -958,9 +961,10 @@ export default function StrategicReports() {
                             divActive == "shifa" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <img
+                        <Image
                           className="img-fluid"
                           src="/assets/images/shifa.png"
+                          alt="image"
                         />{" "}
                       </div>
                     </div>
@@ -975,9 +979,10 @@ export default function StrategicReports() {
                             divActive == "tph" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <img
+                        <Image
                           className="img-fluid"
                           src="/assets/images/tph.png"
+                          alt="image"
                         />{" "}
                       </div>
                     </div>
@@ -992,8 +997,9 @@ export default function StrategicReports() {
                               : "none",
                         }}
                       >
-                        <img
+                        <Image
                           className="img-fluid"
+                          alt="image"
                           src="/assets/images/bloovo.png"
                         />{" "}
                       </div>
@@ -1016,8 +1022,9 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img
+                      <Image
                         className="img-fluid"
+                        alt="image"
                         src="/assets/images/spectraf.png"
                       />{" "}
                     </div>
@@ -1065,8 +1072,9 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img
+                      <Image
                         className="img-fluid"
+                        alt="image"
                         src="/assets/images/gaic.png"
                       />{" "}
                     </div>
@@ -1111,8 +1119,9 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img
+                      <Image
                         className="img-fluid"
+                        alt="image"
                         src="/assets/images/nabdf.png"
                       />{" "}
                     </div>
@@ -1166,8 +1175,9 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img
+                      <Image
                         className="img-fluid"
+                        alt="image"
                         src="/assets/images/shifaf.png"
                       />{" "}
                     </div>
@@ -1224,8 +1234,9 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img
+                      <Image
                         className="img-fluid"
+                        alt="image"
                         src="/assets/images/tphf.png"
                       />{" "}
                     </div>
@@ -1304,8 +1315,9 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img
+                      <Image
                         className="img-fluid"
+                        alt="image"
                         src="/assets/images/bloovo.png"
                       />{" "}
                     </div>

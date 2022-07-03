@@ -1,7 +1,6 @@
 import React from "react";
-import { Col, Container, Row ,Button} from "reactstrap";
+import { Button} from "reactstrap";
 import Image from "next/image";
-import PerformanceOverview from '../../public/assets/images/PerformanceOverview.png'
 import {MdKeyboardArrowDown} from'react-icons/md'
 import Link from 'next/link';
 
@@ -11,7 +10,7 @@ import Link from 'next/link';
     return (
         <div>
             <section>
-                    <img src={'/assets/images/PerformanceOverview.png'}  alt="image" className='img-fluid' />
+                    <Image src={'/assets/images/PerformanceOverview.png'}  alt="image" className='img-fluid' />
                     <div className="titleIntro">
                         <h1>
                              Performance Overview
@@ -40,4 +39,5 @@ import Link from 'next/link';
     );
     
    });
+   Intro.displayName="Performance Overview";
    export default  Intro;

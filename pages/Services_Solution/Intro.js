@@ -10,7 +10,7 @@ import Link from 'next/link';
     return (
         <div>
             <section>
-                    <img src={'/assets/images/services.png'}  alt="image" className="img-fluid" />
+                    <Image src={'/assets/images/services.png'}  alt="image" className="img-fluid" />
                     <div className="titleIntro">
                         <h1>
                         Services & Solutions
@@ -37,4 +37,5 @@ import Link from 'next/link';
     );
     
    });
+   Intro.displayName="Services"
    export default  Intro;

@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
-import { useRouter } from 'next/router'
-import { FiMenu } from 'react-icons/fi';
- import { IoIosClose } from 'react-icons/io';
- import { Col, Row,Button} from 'reactstrap';
- import {Offcanvas}from'react-bootstrap'
- import SmoothList from 'react-smooth-list';
- import Link from 'next/link';
+import React from 'react';
 
+ import {  Row} from 'reactstrap';
+
+ import Image from 'next/image'
 
 const BottomTap = () => {
 
@@ -17,7 +13,7 @@ const BottomTap = () => {
         <>
             <Row style={{backgroundColor:'#415259',width:'100%',height:'100%',padding:100}}> 
                     <div className='col border-end' >
-                        <img src="/assets/images/pdf.png" />
+                        <Image src="/assets/images/pdf.png"  alt="P"/>
                         <p style={{color:'white'}}> Download</p>
                     </div>
                     <div className='col'>

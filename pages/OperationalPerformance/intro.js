@@ -1,7 +1,8 @@
 import React from "react";
-import { Col, Container, Row ,Button} from "reactstrap";
+import { Button} from "reactstrap";
 import {MdKeyboardArrowDown} from'react-icons/md'
 import Link from 'next/link';
+import Image from 'next/image'
 
  const Intro = React.forwardRef((ref) => {
    
@@ -9,7 +10,7 @@ import Link from 'next/link';
     return (
         <div>
             <section>
-                    <img src={'/assets/images/StrategicReports.png'}  alt="image" className="img-fluid" />
+                    <Image src={'/assets/images/StrategicReports.png'}  alt="image" className="img-fluid" />
                     <div className="titleIntro">
                         <h1>
                         Operational Performance
@@ -38,4 +39,5 @@ import Link from 'next/link';
     );
     
    });
+   Intro.displayName="Operational Performance"
    export default  Intro;

@@ -284,7 +284,7 @@ export default function PerformanceOverview() {
                           alignItems: "center",
                         }}
                       >
-                        <img
+                        <Image
                           style={{
                             width: "15%",
                             height: "15%",
@@ -319,7 +319,7 @@ export default function PerformanceOverview() {
                           alignItems: "center",
                         }}
                       >
-                        <img
+                        <Image
                           style={{
                             width: "15%",
                             height: "15%",
