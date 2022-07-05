@@ -1,6 +1,6 @@
 import React from "react";
 import BottomTap from "../../components/bottomTap";
-import Intro from './Intro'
+import Intro from './intro'
 import DownloadCenter from './DownloadCenter'
 
  const Home = () => {
