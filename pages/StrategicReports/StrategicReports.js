@@ -44,7 +44,8 @@ export const options = {
 };
 
 export default function StrategicReports() {
-  const [divActive, setDivActive] = useState("");
+  const [divActive, setDivActive] = useState("spectra");
+  const [divAct2, setDivAct2] = useState("Customers");
   // let { t } = useTranslation("common");
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -92,7 +93,7 @@ export default function StrategicReports() {
       <section style={{ paddingTop: "3rem" }}>
         <div className="row">
           <div className="col">
-            <img  src={vision} alt="vision" />
+            <img src={"/assets/images/vision.png"}className='img-fluid' alt="vision" />
             <h5>Vision</h5>
             <p>
               Leading the human resources sector by providing comprehensive &
@@ -101,7 +102,7 @@ export default function StrategicReports() {
             </p>
           </div>
           <div className="col">
-            <img  src={mission} alt="mission" />
+            <img src={"/assets/images/mission.png"} className='img-fluid' alt="mission" />
             <h5>Mission</h5>
             <p>
               We are working on providing innovative and integrated human
@@ -111,7 +112,7 @@ export default function StrategicReports() {
             </p>
           </div>
           <div className="col">
-            <img  src={values} alt="values" />
+            <img src={"/assets/images/values.png"} className='img-fluid' alt="values" />
             <h5>Values</h5>
             <p>
               Creation and innovation, integrity and transparency, quality and
@@ -314,7 +315,128 @@ export default function StrategicReports() {
           </div>
         </div>
       </section>
-      
+      <section>
+        <div>
+          <Row sm={"6"}>
+            <div className="col" style={{ width: "40%" }}>
+              <h5 className=" p-2" style={{ whiteSpace: "nowrap" }}>
+                {" "}
+                Operational Model{" "}
+              </h5>
+            </div>
+          </Row>
+          <div className="row d-flex justify-content-center">
+            <div className="col-4">
+              <div className="row gx-5">
+                <div className="row" style={{width:"40vw"}}>
+                  <div
+                    className="shadow-sm p-3 mb-5 bg-body rounded-3 d-flex justify-content-sm-evenly align-items-center"
+                    onClick={() => setDivAct2("Customers")}
+                    style={{
+                      color:
+                        divAct2 == "Customers" ? "#C9C3AD" : "#707070",
+                    }}
+                  >
+                    <img
+                      className="img-fluid"
+                      alt="image"
+                      src="/assets/images/Customers.png"
+                    />{" "}<p>Customers</p>
+                  </div>
+                </div>
+                <div className="row" style={{width:"40vw"}}>
+                  <div
+                    className="shadow-sm p-3 mb-5 bg-body rounded-3 d-flex justify-content-sm-evenly align-items-center"
+                    onClick={() => setDivAct2("Channels")}
+                    style={{
+                      color: divAct2 == "Channels" ? "#C9C3AD" : "#707070",
+                    }}
+                  >
+                    <img
+                      alt="image"
+                      className="img-fluid"
+                      src="/assets/images/Channels.png"
+                    />{" "}<p>Channels</p>
+                  </div>
+                </div>
+                <div className="row" style={{width:"40vw"}}>
+                  <div
+                    className="shadow-sm p-3 mb-5 bg-body rounded-3 d-flex justify-content-sm-evenly align-items-center"
+                    onClick={() => setDivAct2("CustomersOutreachUnits")}
+                    style={{
+                      color: divAct2 == "CustomersOutreachUnits" ? "#C9C3AD" : "#707070",
+                    }}
+                  >
+                    <img
+                      className="img-fluid"
+                      src="/assets/images/CustomersOutreachUnits.png"
+                      alt="image"
+                    />{" "}<p>Customers Outreach Units</p>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+            <div className="col-6">
+              <div
+                className={`col  ${
+                  divAct2 == "Customers" ? "d-block" : "d-none"
+                }`}
+              >
+                <div
+                  className={`shadow-sm p-3 mb-5 bg-body rounded-3 justify-content-center d-flex align-items-center flex-column`}
+                  id="Customers"
+                >
+                  <ul className="esnad">
+                      <li>Companies</li>
+                      <li>Government al Authorities</li>
+                      <li>VIP Customers</li>
+                      <li>Individuals</li>
+                      <li>Shareholders and owners</li>
+                  </ul>
+                </div>
+                
+              </div>
+              <div
+                className={`col  ${divAct2 == "Channels" ? "d-block" : "d-none"}`}
+              >
+                <div
+                  className={`shadow-sm p-3 mb-5 bg-body rounded-3 justify-content-center d-flex align-items-center flex-column`}
+                  id="Channels"
+                >
+                 <ul className="esnad">
+                      <li>Sales and relationship Managers</li>
+                      <li>Branchs</li>
+                      <li>Call Centers</li>
+                      <li>E-channels</li>
+                      <li>Company Announcements on Tadawul</li>
+                  </ul>
+                </div>
+               
+              </div>
+              <div
+                className={`col  ${divAct2 == "CustomersOutreachUnits" ? "d-block" : "d-none"}`}
+              >
+                <div
+                  className={`shadow-sm p-3 mb-5 bg-body rounded-3 justify-content-center d-flex align-items-center flex-column`}
+                  id="CustomersOutreachUnits"
+                >
+                  
+                  <ul className="esnad">
+                      <li>Individuals & Corporate</li>
+                      <li>Administrative and Support Operations</li>
+                      <li>Project Management</li>
+                      <li>Manpower services</li>
+                      <li>Logistics and Operations</li>
+                      <li>Marketing</li>
+                  </ul>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="m-4">
         <>
           <div className="row">
@@ -346,7 +468,7 @@ export default function StrategicReports() {
             </div>
             <div className="row d-flex">
               <div className="col-6">
-                <img 
+                <img
                   src="assets/images/image.png"
                   className="img-fluid"
                   alt="img"
@@ -382,7 +504,7 @@ export default function StrategicReports() {
                       <div className="col">
                         <CountUp
                           style={{
-                            fontSize: 60,
+                            fontSize: "300%",
                             fontWeight: "bolder",
                             color: "#A98445",
                           }}
@@ -473,7 +595,7 @@ export default function StrategicReports() {
                       <div className="col">
                         <CountUp
                           style={{
-                            fontSize: 60,
+                            fontSize: "300%",
                             fontWeight: "bolder",
                             color: "#A98445",
                           }}
@@ -565,12 +687,12 @@ export default function StrategicReports() {
               >
                 <CountUp
                   style={{
-                    fontSize: 60,
+                    fontSize: "300%",
                     fontWeight: "bolder",
                     color: "#A98445",
                   }}
                   start={0}
-                  end={85}
+                  end={40}
                   suffix={"%"}
                   decimals={0}
                   duration={3}
@@ -584,7 +706,7 @@ export default function StrategicReports() {
                 </span>
               </div>
               <div className="col d-flex justify-content-center">
-                <img 
+                <img
                   src="/assets/images/salis.png"
                   alt="salis.png"
                   className="img-fluid"
@@ -787,7 +909,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img 
+                      <img
                         src={"/assets/images/senior.png"}
                         //style={{ width: "20%", height: "20%" }}
                         className="img-fluid"
@@ -811,7 +933,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img 
+                      <img
                         src={"/assets/images/XMLID.png"}
                         className="img-fluid"
                         alt="icon"
@@ -833,7 +955,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img 
+                      <img
                         src={"/assets/images/strong.png"}
                         className="img-fluid"
                         alt="icon"
@@ -853,7 +975,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img 
+                      <img
                         src={"/assets/images/code.png"}
                         className="img-fluid"
                         alt="icon"
@@ -873,7 +995,7 @@ export default function StrategicReports() {
                         alignItems: "center",
                       }}
                     >
-                      <img 
+                      <img
                         src={"/assets/images/world.png"}
                         className="img-fluid"
                         alt="icon"
@@ -911,7 +1033,7 @@ export default function StrategicReports() {
                               : "none",
                         }}
                       >
-                        <img 
+                        <img
                           className="img-fluid"
                           alt="image"
                           src="/assets/images/spectra.png"
@@ -927,8 +1049,8 @@ export default function StrategicReports() {
                             divActive == "gaic" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <img 
-                        alt="image"
+                        <img
+                          alt="image"
                           className="img-fluid"
                           src="/assets/images/gaic.png"
                         />{" "}
@@ -945,7 +1067,7 @@ export default function StrategicReports() {
                             divActive == "nabd" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <img 
+                        <img
                           className="img-fluid"
                           src="/assets/images/nabd.png"
                           alt="image"
@@ -961,7 +1083,7 @@ export default function StrategicReports() {
                             divActive == "shifa" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <img 
+                        <img
                           className="img-fluid"
                           src="/assets/images/shifa.png"
                           alt="image"
@@ -979,7 +1101,7 @@ export default function StrategicReports() {
                             divActive == "tph" ? "2px solid #C9C3AD" : "none",
                         }}
                       >
-                        <img 
+                        <img
                           className="img-fluid"
                           src="/assets/images/tph.png"
                           alt="image"
@@ -997,7 +1119,7 @@ export default function StrategicReports() {
                               : "none",
                         }}
                       >
-                        <img 
+                        <img
                           className="img-fluid"
                           alt="image"
                           src="/assets/images/bloovo.png"
@@ -1022,7 +1144,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img 
+                      <img
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/spectraf.png"
@@ -1072,7 +1194,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img 
+                      <img
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/gaic.png"
@@ -1119,7 +1241,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img 
+                      <img
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/nabdf.png"
@@ -1175,7 +1297,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img 
+                      <img
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/shifaf.png"
@@ -1234,7 +1356,7 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img 
+                      <img
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/tphf.png"
@@ -1315,14 +1437,23 @@ export default function StrategicReports() {
                       <br />
                       <h6>Kingdom of Saudi Arabia Subsidiary</h6>
                       <br />
-                      <img 
+                      <img
                         className="img-fluid"
                         alt="image"
                         src="/assets/images/bloovo.png"
                       />{" "}
                     </div>
                     <div>
-                      <p>“BLOOVO” provides a selective group of innovative and smart recruitment solutions, to help employers and job seekers, through AI-Powered Recruitment Technology with the automated learning algorithms, which aim to pace up and simplify the operations for the acquisition and management of talents, and the automatic arrangement of candidates, through significant matching results, that saves time and costs of company owners.</p>
+                      <p>
+                        “BLOOVO” provides a selective group of innovative and
+                        smart recruitment solutions, to help employers and job
+                        seekers, through AI-Powered Recruitment Technology with
+                        the automated learning algorithms, which aim to pace up
+                        and simplify the operations for the acquisition and
+                        management of talents, and the automatic arrangement of
+                        candidates, through significant matching results, that
+                        saves time and costs of company owners.
+                      </p>
                     </div>
                   </div>
                 </div>

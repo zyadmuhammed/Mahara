@@ -17,7 +17,7 @@ body {
 }
 
 section {
-  display: flex;
+  /* display: flex; */
 }
 
 a {
@@ -131,7 +131,7 @@ a {
   border-bottom-style: solid;
 }
 .descCountUp{
-  font-size: medium;
+  font-size: small;
   text-align: center;
 }
 
@@ -141,8 +141,8 @@ a {
   position: absolute;
   width: 5rem;
   height: 5rem;
-  bottom: 10%;
-  top: 80%;
+  bottom: 0px;
+  top: 500px;
   right: 50%;
   left: 50%;
   background-color: rgba(255, 255, 255, 0.25098039215686274) !important;
@@ -155,8 +155,8 @@ a {
   position: absolute;
   width: 150px;
   height: 100px;
-  bottom: 10%;
-  top: 80%;
+  bottom: 0px;
+  top: 500px;
   right: 85%;
   left: 15%;
   background-color: rgba(255, 255, 255, 0.25098039215686274) !important;
@@ -169,8 +169,8 @@ a {
   position: absolute;
   width: 150px;
   height: 100px;
-  bottom: 10%;
-  top: 80%;
+  bottom: 0px;
+  top: 500px;
   right: 74%;
   left: 27%;
   background-color: rgba(255, 255, 255, 0.25098039215686274) !important;
@@ -185,8 +185,8 @@ a {
 
 .titleIntro {
   position: absolute;
-  bottom: 45%;
-  top: 55%;
+  bottom: 0px;
+  top: 300px;
   right: 85%;
   left: 15%;
   white-space: nowrap;
@@ -324,6 +324,45 @@ body {
   }
   .steps .steps-container:nth-child(even) {
     left: 0;
+  }
+  .btnHomeCenter {
+    bottom: 0px;
+    top: 150px;
+    font-size: small;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .btnHomesideOne {
+
+    bottom: 0px;
+    top: 150px;
+    font-size: small;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .btnHomeSideTwo {
+  
+    bottom: 0px;
+    top: 150px;
+    font-size: small;
+    width: 1rem;
+    height: 1rem;
+  
+  }
+  
+  
+  .titleIntro {
+    font-size: small !important;
+    top: 50px;
+    width: 1rem;
+    height: 1rem;
+  }
+    
+  .titleIntro h1 h2{
+    font-size: small !important;
+    
   }
 }
 
@@ -645,3 +684,51 @@ ul li{
   }
  }
  
+
+ input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+  font-family: 'Arial'
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #A98445;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  padding-left: 0.5em;
+  padding-bottom: 0.4em;
+  margin-right: 0.5em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: #D8A115;
+  border-color: #D8A115;
+  color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #F7C28F;
+  border-color: #F7C28F;
+}

@@ -3,22 +3,12 @@ import {
   Col,
   Container,
   Row,
-  Nav,
-  NavItem,
-  NavLink,
-  TabContent,
-  TabPane,
-  Card,
-  Button,
-  CardText,
-  CardTitle,
 } from "reactstrap";
-import Image from "next/image";
-import chairman from "../../public/assets/images/chairman.png";
-import chiefExecutive from "../../public/assets/images/chiefExecutive.png";
-import { FaUserTie } from "react-icons/fa";
 import CountUp from "react-countup";
 import { Chart } from "react-google-charts";
+import * as Highcharts from 'highcharts/highmaps';
+import HighchartsReact from "highcharts-react-official";
+import mapDataWorld from '@highcharts/map-collection/countries/sa/sa-all.geo.json';
 
 export const data = [
   ["", ""],
@@ -40,8 +30,18 @@ export const options = {
   },
 };
 
+
+export const dataMap = [
+  ['sa-4293', null], ['sa-tb', 101], ['sa-jz', null], ['sa-nj', null],
+  ['sa-ri', 8], ['sa-md', 1], ['sa-ha', 1], ['sa-qs', 3],
+  ['sa-hs', null], ['sa-jf', null], ['sa-sh', 1], ['sa-ba', null],
+  ['sa-as', 1], ['sa-mk', 5]
+];
+
+
 export default function Services_Solution() {
   // let { t } = useTranslation("common");
+  const [topology , settopology]=useState([])
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -57,9 +57,27 @@ export default function Services_Solution() {
       }
     }
   }
+
   useEffect(() => {
+
     window.addEventListener("scroll", reveal);
   });
+ 
+  const optionss= {
+    title: {
+      text: ''
+    },
+
+    series: [{
+        type: 'map',
+        nullColor: 'rgba(200, 200, 200, 0.3)',
+        mapData: mapDataWorld,
+        data: dataMap,
+      
+    }],
+  }
+  
+ 
   return (
     <Container>
       <section style={{ paddingTop: "3rem" }} id="Services_Solution">
@@ -210,7 +228,23 @@ export default function Services_Solution() {
           </div>
         </div>
       </section>
-
+      <Row sm={"4"} style={{ paddingTop: "3rem" }}>
+        <h6> Geographic Distribution </h6>
+      </Row>
+      
+        <div>
+       
+        
+        <HighchartsReact
+        options={optionss}
+        highcharts = { Highcharts }
+        constructorType={'mapChart'}
+               
+    />
+        
+         
+        </div>
+     
       <section className="m-4">
         <div className="row">
           <div className="row">
@@ -311,7 +345,7 @@ export default function Services_Solution() {
                   <span>
                     <CountUp
                       style={{
-                        fontSize: "3rem",
+                        fontSize: "300%",
                         fontWeight: "bolder",
                         color: "#D8A115",
                       }}

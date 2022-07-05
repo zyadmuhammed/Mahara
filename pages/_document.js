@@ -48,6 +48,7 @@ class MyDocument extends Document {
          <link rel="icon" href="/favicon.ico" />
          <meta name={this.props.t('titleـpage')} content={this.props.t('titleـpage')} />
          <meta name='generator' content='mdx-docs' />
+
          {/* <link href="https://fonts.googleapis.com/css?family=Capriola&amp;subset=latin-ext" rel="stylesheet" />
          <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
          <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />

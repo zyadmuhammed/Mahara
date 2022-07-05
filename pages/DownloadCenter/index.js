@@ -1,11 +1,9 @@
 import React from "react";
-import { Col, Container, Row ,Button} from "reactstrap";
 import BottomTap from "../../components/bottomTap";
+import Intro from './Intro'
+import DownloadCenter from './DownloadCenter'
 
-import Intro from './intro'
-import OperationalPerformance from './OperationalPerformance'
-
- const Home = (ref) => {
+ const Home = () => {
    
     // let { t } = useTranslation("common");
     return (
@@ -14,11 +12,11 @@ import OperationalPerformance from './OperationalPerformance'
                 <Intro/>
             </section>
             <section>
-                <OperationalPerformance/>
+                <DownloadCenter/>
 
             </section>
            <section>
-           <BottomTap DownloadLink={"SustainabilitySocialImpact"} titleNextPage={"Sustainability & Social Impact"} NextPage={"Sustainability_SocialImpact"}/>
+               <BottomTap DownloadLink="En/FinancialPerformance.pdf"  NextPage="" titleNextPage="Home"/>
            </section>
           
             

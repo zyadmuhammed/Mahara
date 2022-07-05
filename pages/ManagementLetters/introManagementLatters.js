@@ -10,7 +10,7 @@ import Link from 'next/link';
     return (
         <div>
             <section>
-            <img  src={'/assets/images/letters.png'} className='img-fluid' alt="ManagementLetters"  />
+            <img  src={'/assets/images/intro/001.png'} className='img-fluid' alt="ManagementLetters"  />
                     {/* <img  src={ManagementLetters} alt="ManagementLetters" layout='responsive' /> */}
                     <div className="titleIntro">
                         <h1>

@@ -1,28 +1,27 @@
 import React from "react";
-import { Col, Container, Row ,Button} from "reactstrap";
-import Image from "next/image";
+import { Button} from "reactstrap";
 import {MdKeyboardArrowDown} from'react-icons/md'
 import Link from 'next/link';
-
+import useTranslation from "next-translate/useTranslation";
 
  const Intro = React.forwardRef((ref) => {
    
-    // let { t } = useTranslation("common");
+     let { t } = useTranslation("common");
     return (
         <div>
             <section>
-                    <img  src={'/assets/images/intro/003.png'} layout='responsive' alt="image" className="img-fluid" />
+                    <img  src={'/assets/images/intro/008.png'}  alt="image" className="img-fluid" />
                     <div className="titleIntro">
                         <h1>
-                        Strategic Report
+                        Download Center
                         </h1>
                         <br/>
                         <h2>
-                        Empowerment for the Future
+                        Full Report or Customized
                         </h2>
                     </div>
                     <div>
-                        <Link href="#StrategicReports">
+                        <Link href="#FinancialPerformance">
                             <Button className="btnHomeCenter"  variant="light" >
                                 <span style={{textAlign:'center' }}>
                                       More<br/> <MdKeyboardArrowDown color="#fff" size={24}/>
@@ -40,5 +39,5 @@ import Link from 'next/link';
     );
     
    });
-   Intro.displayName="Strategic Report";
+   Intro.displayName="Download Center"
    export default  Intro;

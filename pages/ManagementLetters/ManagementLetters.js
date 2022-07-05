@@ -1,7 +1,6 @@
 import react, { useEffect } from "react";
 import { Col, Container, Row } from "reactstrap";
-import Image from "next/image";
-import chairman from '../../public/assets/images/chairman.png'
+
 import chiefExecutive from '../../public/assets/images/chiefExecutive.png'
 import {FaUserTie} from'react-icons/fa'
 
@@ -49,8 +48,8 @@ export default function ManagementLetters() {
                     
                     <div>
                             <img 
-                                src={chairman}
-                                layout="fixed"
+                                src={"/assets/images/chairman.png"}
+                                className="img-fluid"
                                 alt="ChairMan"
                             />
                             <Row style={{borderRadius:'0px 30px 15px 30px',
@@ -137,8 +136,8 @@ export default function ManagementLetters() {
                      {/* <h1 style={{color:'#a98445'}}> Chief Executive Officer's </h1>
                      <h1 style={{color:'#415259'}}> Letters</h1> */}
                             <img 
-                                src={chiefExecutive}
-                                layout="fixed"
+                                src={"/assets/images/chiefExecutive.png"}
+                                className="im-fluid"
                                 alt="chiefExecutive"
                             />
                             <Row style={{borderRadius:'0px 30px 15px 30px',

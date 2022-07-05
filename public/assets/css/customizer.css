@@ -17,18 +17,13 @@
   }
   .logo {
    
-    position: sticky !important;
-    display: flex !important;
-    bottom: 95% !important;
-    right:100% !important;
+    position: absolute ;
+    display: block !important;
+    
     z-index: 1;
     padding: 0 5px;
   
-    /* width: 8rem;
-    height: 5rem; */
-    /* align-self: center;
-    align-items: center;
-    justify-content: center; */
+   
   }
  .offcanvas{
   height: 100vh !important;

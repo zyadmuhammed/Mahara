@@ -9,7 +9,7 @@ import { FiMenu } from 'react-icons/fi';
 
 
 const Customizer = () => {
-    const [divName, setDivName] = useState('اللغة العربية');
+    const [divName, setDivName] = useState('Ar');
     const [IsMenuShow, setMenuShow] = useState(false);
     const router = useRouter();
     const [show, setShow] = useState(false);
@@ -18,46 +18,26 @@ const Customizer = () => {
   const handleShow = () => setShow(true);
 
     const ChangeRtl = (divName) => {
-        
-        if (divName === 'اللغة العربية') {
+        console.log(divName)
+        if (divName === 'Ar') {
             if (process.browser) {
                  document.body.classList.add('rtl');
                  router.push('/', '/ar', { locale: 'ar' })
-                 document.getElementsByClassName('menu')[0].classList.add("showMenu")
-            setDivName('English')
+            setDivName('En')
 
             }
             
         } else {
             if (process.browser) {
                 document.body.classList.remove('rtl');
-                document.getElementsByClassName('menu')[0].classList.replace("showMenu","hideShow")
                 router.push('/', '/', { locale: 'en-US' })
 
-            setDivName('اللغة العربية')
+            setDivName('Ar')
             }
             
         }
     }
-    const OpenMenu = () => {
-        
-        if (IsMenuShow === true) {
-          
-            document.getElementsByClassName('menu')[0].classList.add("hideMenu")
-            document.getElementsByClassName('menu')[0].classList.remove("showMenu")
-            document.getElementsByClassName('menu')[0].removeAttribute("open")
-            
-            setMenuShow(false)
  
-            
-        } else {
-
-                document.getElementsByClassName('menu')[0].classList.add("showMenu")
-                document.getElementsByClassName('menu')[0].classList.remove("hideMenu")
-                document.getElementsByClassName('menu')[0].setAttribute("open","open")
-                setMenuShow(true)
-        }
-    }
   
 
     return (
@@ -67,14 +47,15 @@ const Customizer = () => {
                 </Button> */}
                 <div className='theme-pannel-main'>
                 <FiMenu color='#fff' size={24} onClick={handleShow}/>
+                {/* <a onClick={()=>ChangeRtl(divName)}>{divName}</a> */}
                 </div>
-
+                
                 <Offcanvas  show={show}  placement='top' onHide={handleClose}>
                     <Offcanvas.Header style={{direction:'rtl'}} closeButton>
                    
                     </Offcanvas.Header>
                     <Offcanvas.Body onClick={handleClose} style={{display:'flex',justifyContent:'center',alignItems:'center' }}>
-                    <SmoothList delay={500} transitionDuration={300}>
+                    <SmoothList delay={400} transitionDuration={100}>
                <Row>
                     <Col className='menuList'>
                         <span className='circle' />

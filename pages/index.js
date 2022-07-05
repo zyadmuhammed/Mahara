@@ -29,9 +29,9 @@ export default function Home() {
                 src={'/assets/images/Logo.png'}
                 alt="home"
                
-              //  layout="responsive"
+             
                 />
-        <img  src={"/assets/images/wallpaper.png"} alt="home" layout='fill' className="img-fluid" />
+        <img  src={"/assets/images/wallpaper.png"} alt="home" className="img-fluid" />
         
         
        <SliderHome/>

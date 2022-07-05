@@ -13,7 +13,6 @@ import {Menu } from'../components/menu'
 import "../styles/Policy.css";
 
 
-
 import useTranslation from "next-translate/useTranslation";
 import { Container } from 'reactstrap';
 

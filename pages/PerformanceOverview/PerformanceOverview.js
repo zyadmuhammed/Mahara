@@ -86,7 +86,7 @@ export default function PerformanceOverview() {
               <span>
                 <CountUp
                   style={{
-                    fontSize: 60,
+                    fontSize: "300%",
                     fontWeight: "bolder",
                     color: "#D8A115",
                   }}
@@ -105,7 +105,7 @@ export default function PerformanceOverview() {
               <span>
                 <CountUp
                   style={{
-                    fontSize: 60,
+                    fontSize: "300%",
                     fontWeight: "bolder",
                     color: "#A98445",
                   }}
@@ -130,7 +130,7 @@ export default function PerformanceOverview() {
               <span>
                 <CountUp
                   style={{
-                    fontSize: 60,
+                    fontSize: "300%",
                     fontWeight: "bolder",
                     color: "#D8A115",
                   }}
@@ -149,7 +149,7 @@ export default function PerformanceOverview() {
               <span>
                 <CountUp
                   style={{
-                    fontSize: 60,
+                    fontSize: "300%",
                     fontWeight: "bolder",
                     color: "#A98445",
                   }}
@@ -170,7 +170,7 @@ export default function PerformanceOverview() {
               <span>
                 <CountUp
                   style={{
-                    fontSize: 60,
+                    fontSize: "300%",
                     fontWeight: "bolder",
                     color: "#D8A115",
                   }}
@@ -189,7 +189,7 @@ export default function PerformanceOverview() {
               <span>
                 <CountUp
                   style={{
-                    fontSize: 60,
+                    fontSize: "300%",
                     fontWeight: "bolder",
                     color: "#A98445",
                   }}
@@ -213,7 +213,7 @@ export default function PerformanceOverview() {
               <span>
                 <CountUp
                   style={{
-                    fontSize: 60,
+                    fontSize: "300%",
                     fontWeight: "bolder",
                     color: "#D8A115",
                   }}
@@ -232,7 +232,7 @@ export default function PerformanceOverview() {
               <span>
                 <CountUp
                   style={{
-                    fontSize: 60,
+                    fontSize: "300%",
                     fontWeight: "bolder",
                     color: "#A98445",
                   }}
@@ -295,7 +295,7 @@ export default function PerformanceOverview() {
                         />
                         <CountUp
                           style={{
-                            fontSize: 60,
+                            fontSize: "300%",
                             fontWeight: "bolder",
                             color: "#D8A115",
                           }}
@@ -330,7 +330,7 @@ export default function PerformanceOverview() {
                         />
                         <CountUp
                           style={{
-                            fontSize: 60,
+                            fontSize: "300%",
                             fontWeight: "bolder",
                             color: "#D8A115",
                           }}
@@ -361,7 +361,7 @@ export default function PerformanceOverview() {
                 <span>
                   <CountUp
                     style={{
-                      fontSize: 60,
+                      fontSize: "300%",
                       fontWeight: "bolder",
                       color: "#415259",
                     }}
@@ -380,7 +380,7 @@ export default function PerformanceOverview() {
                 <span>
                   <CountUp
                     style={{
-                      fontSize: 60,
+                      fontSize: "300%",
                       fontWeight: "bolder",
                       color: "#723B1C",
                     }}
@@ -401,7 +401,7 @@ export default function PerformanceOverview() {
                 <span>
                   <CountUp
                     style={{
-                      fontSize: 60,
+                      fontSize: "300%",
                       fontWeight: "bolder",
                       color: "#242E40",
                     }}
@@ -421,7 +421,7 @@ export default function PerformanceOverview() {
                 <span>
                   <CountUp
                     style={{
-                      fontSize: 60,
+                      fontSize: "300%",
                       fontWeight: "bolder",
                       color: "#D8A115",
                     }}
@@ -440,7 +440,7 @@ export default function PerformanceOverview() {
                 <span>
                   <CountUp
                     style={{
-                      fontSize: 60,
+                      fontSize: "300%",
                       fontWeight: "bolder",
                       color: "#A98445",
                     }}
@@ -461,7 +461,7 @@ export default function PerformanceOverview() {
                 <span>
                   <CountUp
                     style={{
-                      fontSize: 60,
+                      fontSize: "300%",
                       fontWeight: "bolder",
                       color: "#242E40",
                     }}

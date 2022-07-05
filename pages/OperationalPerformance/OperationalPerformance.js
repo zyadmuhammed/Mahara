@@ -1,7 +1,5 @@
 
 import { Col, Container, Row } from "reactstrap";
-import Image from "next/image";
-
 import CountUp from "react-countup";
 import { Chart } from "react-google-charts";
 
@@ -50,17 +48,16 @@ export default function OperationalPerformance() {
   ];
 
   const optionsBar = {
-    chart: {
-      title: "Turnover Rate",
-      //   subtitle: "Based on most recent and previous census data",
-    },
-    hAxis: {
-      title: "",
-      minValue: 0,
-    },
-    vAxis: {
-      title: "",
-    },
+   
+    title: "Turnover Rate",
+    titleTextStyle: {
+      color: '#D8A115'
+  },  
+  animation: {
+    duration: 1000,
+    easing: "out",
+    startup: true,
+  },
     bars: "horizontal",
     bar: { groupWidth: "95%" },
     legend: { position: "none" },
@@ -143,7 +140,7 @@ export default function OperationalPerformance() {
                         />
                         <CountUp
                           style={{
-                            fontSize: 60,
+                            fontSize: "300%",
                             fontWeight: "bolder",
                             color: "#D8A115",
                           }}
@@ -178,7 +175,7 @@ export default function OperationalPerformance() {
                         />
                         <CountUp
                           style={{
-                            fontSize: 60,
+                            fontSize: "300%",
                             fontWeight: "bolder",
                             color: "#D8A115",
                           }}

@@ -18,7 +18,7 @@ import StrategicReports from './StrategicReports'
 
             </section>
            <section>
-               <BottomTap/>
+           <BottomTap DownloadLink={"ServicesSolutions"} NextPage="Services_Solution" titleNextPage={"Services Solution"}/>
            </section>
           
             
