@@ -449,11 +449,11 @@ export default function Services_Solution() {
           </div>
         </Row>
         <div>
-          <div class="overflow-hidden">
-            <div class="row gx-5">
-              <div class="col">
+          <div className="overflow-hidden">
+            <div className="row gx-5">
+              <div className="col">
               <span style={{marginInlineStart:"10rem"}}>Individuals</span>
-                <div class="p-3 ">
+                <div className="p-3 ">
                 
                 <div style={{backgroundColor:'#A98445' , width:25,height:50,display:'inline-flex',borderRadius:8}}></div>
 
@@ -497,9 +497,9 @@ export default function Services_Solution() {
                 </span>
                 </div>
               </div>
-              <div class="col">
+              <div className="col">
               <span style={{marginInlineStart:"6rem"}}>Industrial And Operational </span>
-                <div class="p-3 d-flex  align-items-center">
+                <div className="p-3 d-flex  align-items-center">
                 
                 <div style={{backgroundColor:'#A98445' , width:25,height:50,display:'inline-flex',borderRadius:8}}></div>
 
@@ -545,13 +545,13 @@ export default function Services_Solution() {
               </div>
             </div>
           </div>
-          <div class="overflow-hidden">
-            <div class="row gx-5">   
+          <div className="overflow-hidden">
+            <div className="row gx-5">   
                        
 
-              <div class="col">
+              <div className="col">
                 <span style={{marginInlineStart:"10rem"}}>Retail </span>
-                <div class="p-3 d-flex  align-items-center">
+                <div className="p-3 d-flex  align-items-center">
                 
                 <div style={{backgroundColor:'#59676B' , width:25,height:50,display:'inline-flex',borderRadius:8}}></div>
 
@@ -595,9 +595,9 @@ export default function Services_Solution() {
                 </span>
                 </div>
               </div>
-              <div class="col">
+              <div className="col">
               <span style={{marginInlineStart:"10rem"}}>Hospitality  </span>
-                <div class="p-3 d-flex  align-items-center">
+                <div className="p-3 d-flex  align-items-center">
                 
                 <div style={{backgroundColor:'#C7C2AF' , width:25,height:50,display:'inline-flex',borderRadius:8}}></div>
 
@@ -643,11 +643,11 @@ export default function Services_Solution() {
               </div>
             </div>
           </div>
-          <div class="overflow-hidden">
-            <div class="row gx-5">
-              <div class="col">
+          <div className="overflow-hidden">
+            <div className="row gx-5">
+              <div className="col">
               <span style={{marginInlineStart:"10rem"}}>Healthcare   </span>
-                <div class="p-3 d-flex  align-items-center">
+                <div className="p-3 d-flex  align-items-center">
                
                 <div style={{backgroundColor:'#D3A734' , width:25,height:50,display:'inline-flex',borderRadius:8}}></div>
 
@@ -691,9 +691,9 @@ export default function Services_Solution() {
                 </span>
                 </div>
               </div>
-              <div class="col">
+              <div className="col">
               <span style={{marginInlineStart:"10rem"}}>Commercial  </span>
-                <div class="p-3 d-flex  align-items-center">
+                <div className="p-3 d-flex  align-items-center">
                 
                 <div style={{backgroundColor:'#81543A' , width:25,height:50,display:'inline-flex',borderRadius:8}}></div>
 
@@ -739,11 +739,11 @@ export default function Services_Solution() {
               </div>
             </div>
           </div>
-          <div class="overflow-hidden">
-            <div class="row gx-5">
-              <div class="col">
+          <div className="overflow-hidden">
+            <div className="row gx-5">
+              <div className="col">
               <span style={{marginInlineStart:"10rem"}}>Esnad Sector</span>
-                <div class="p-3 d-flex  align-items-center">
+                <div className="p-3 d-flex  align-items-center">
                
                 <div style={{backgroundColor:'#414957' , width:25,height:50,display:'inline-flex',borderRadius:8}}></div>
 
@@ -788,8 +788,8 @@ export default function Services_Solution() {
                 
                 </div>
               </div>
-              <div class="col">
-                <div class="p-3 d-flex  align-items-center">
+              <div className="col">
+                <div className="p-3 d-flex  align-items-center">
                 
                 </div>
               </div>
