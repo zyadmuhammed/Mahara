@@ -21,7 +21,7 @@ import useTranslation from "next-translate/useTranslation";
                         </h2>
                     </div>
                     <div>
-                        <Link href="#FinancialPerformance">
+                        <Link href="#DownloadCenter">
                             <Button className="btnHomeCenter"  variant="light" >
                                 <span style={{textAlign:'center' }}>
                                       More<br/> <MdKeyboardArrowDown color="#fff" size={24}/>

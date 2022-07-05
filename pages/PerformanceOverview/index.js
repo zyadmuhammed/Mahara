@@ -18,7 +18,7 @@ import PerformanceOverview from './PerformanceOverview'
 
             </section>
            <section>
-           <BottomTap DownloadLink={"StrategicReports"} NextPage="StrategicReports" titleNextPage={"Strategic Reports"}/>
+           <BottomTap DownloadLink={"PerformanceOverview"} NextPage="StrategicReports" titleNextPage={"Strategic Reports"}/>
 
            </section>
           

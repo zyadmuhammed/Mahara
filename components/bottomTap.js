@@ -12,7 +12,7 @@ const BottomTap = ({DownloadLink , NextPage, titleNextPage}) => {
                     <div className='col d-flex justify-content-sm-evenly align-items-center' style={{borderInlineEnd:"solid 1px black"}}>
                       
                             <img  src="/assets/images/pdf.png" className='img-fluid' alt="P"/>
-                      <a href={`${DownloadLink?"/assets/pdf/En/DownloadLink.pdf":"/assets/pdf/full/En.pdf"}`}>
+                      <a href={`${DownloadLink?`/assets/pdf/En/${DownloadLink}.pdf`:"/assets/pdf/full/En.pdf"}`}>
                            <p style={{color:'white'}}> Download</p>
 
                         </a>

@@ -16,7 +16,7 @@ import DownloadCenter from './DownloadCenter'
 
             </section>
            <section>
-               <BottomTap DownloadLink="En/FinancialPerformance.pdf"  NextPage="" titleNextPage="Home"/>
+               <BottomTap   NextPage="" titleNextPage="Home"/>
            </section>
           
             
