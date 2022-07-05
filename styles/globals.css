@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Tajawal-Regular';
-
+background-color: #f1f1f1;
   /* background-image: url("../public/assets/images/hd-wallpaper.jpg"); */
 
 }
@@ -652,38 +652,143 @@ ul li{
   text-align:left;
 }
 
-.talent-development{
-  margin-top: 200px;
+.left-side {
+  width: 22%;
+  border-radius: 5px;
+  background: #fff;
+  padding-top: 15px;
 }
 
-
-
-
-
-.img-style{
-  height: 100%;
-  width: 100%;
+.right-side {
+  width: 75%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  position: relative;
 }
 
-.row-style{
-  background-color:#fff ;
-}
-.row-style:hover .st{
-  background-color:#D8A115 ;
-}
-
-@media (max-width:1440px) and (min-width:768px){
- .st{
-  font-size: 20px;
- }
+.tr-shape {
+  border-right: 15px solid #fff;
+  border-top: 21px solid transparent;
+  border-bottom: 30px solid transparent;
+  width: 20px;
+  height: 58px;
+  position: absolute;
+  left: -20px;
+  top: 3px;
 }
 
-@media (max-width:767px) and (min-width:220px){
-  .st{
-   font-size: 10px;
+.img-style {
+  width: 25px;
+  height: 25px;
+}
+
+.text-style {
+  text-align: center;
+}
+
+.first-col {
+  margin: 10px;
+  font-size: 15px !important;
+}
+
+.first-col:hover .left-side {
+  background-color: #d8a115;
+  color: #fff;
+}
+
+.first-col:hover .right-side {
+  background-color: #d8a115;
+  color: #fff;
+}
+
+.bg-img {
+  background: url("/assets/images/talent/Group\ 452.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+
+.bg-sec-img {
+  background: url("/assets/images/talent/Group\ 451.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+
+.bg-thrd-img {
+  background: url("/assets/images/talent/Group\ 450.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+
+.bg-forth-img {
+  background: url("/assets/images/talent/Group\ 449.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+.first-col :hover .bg-img {
+  background: url("/assets/images/talent/Group\ 445.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+.first-col :hover .bg-sec-img {
+  background: url("/assets/images/talent/Group\ 446.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+
+.first-col :hover .bg-thrd-img {
+  background: url("/assets/images/talent/Group\ 447.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+
+.first-col :hover .bg-forth-img {
+  background: url("/assets/images/talent/Group\ 448.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+
+/* Start Media */
+
+@media (min-width: 220px) and (max-width: 768px) {
+  .text-style {
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
   }
- }
- 
+  .img-style {
+    width: 20px;
+    height: 20px;
+  }
+  .info-1 {
+    font-size: 12px;
+  }
+  .info-2 {
+    font-size: 12px;
+  }
+
+  .tr-shape {
+    top: 0px;
+    left: -19px;
+  }
+  .left-side {
+    font-size: 12px;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 907px) {
+  .first-col {
+    font-size: 10px !important;
+  }
+
+  .tr-shape {
+    left: -17px;
+    top: -1px;
+  }
+}
+
 
  input[type=checkbox] + label {
   display: block;
@@ -731,4 +836,15 @@ input[type=checkbox]:checked:disabled + label:before {
   transform: scale(1);
   background-color: #F7C28F;
   border-color: #F7C28F;
+}
+
+.managelater p{
+  font-size: 20px !important;
+}
+.managelater h5{
+  font-size: 30px !important;
+  color: #D8A115;
+}
+body{
+  background-color: #F1F1F1;
 }

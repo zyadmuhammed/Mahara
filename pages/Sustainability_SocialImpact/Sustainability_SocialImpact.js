@@ -19,7 +19,7 @@ export default function SustainabilitySocialImpact() {
                   style={{ textAlign: "initial", whiteSpace: "nowrap" }}
                   className="reveal fade-left"
                 >
-                  <h1>
+                  <h1 style={{fontSize:60}}>
                     <span style={{ color: "#a98445", fontWeight: "bold" }}>
                     Sustainability{" "}
                     </span>

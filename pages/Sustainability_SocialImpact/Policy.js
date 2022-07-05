@@ -8,7 +8,7 @@ const Policy = () => {
       <div className="container">
         {/* Title Section */}
         <div className="title-section mb-4">
-          <h5 className="display-6">Policy Of Commitment</h5>
+          <h4 className="display-6">Policy Of Commitment</h4>
           <p>The most important features of the Company’s policy of commitment to the governance, social and environmental issues are as follows</p>
         </div>
         {/* Title Section */}

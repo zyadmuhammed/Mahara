@@ -1,9 +1,7 @@
-
 import { Col, Container, Row } from "reactstrap";
 import CountUp from "react-countup";
 import { Chart } from "react-google-charts";
 import ReactVisibilitySensor from "react-visibility-sensor";
-
 
 export default function OperationalPerformance() {
   // let { t } = useTranslation("common");
@@ -24,18 +22,14 @@ export default function OperationalPerformance() {
     slices: {
       0: { color: "#A98445" },
       1: { color: "#D8A115" },
-    },animation: {
+    },
+    animation: {
       duration: 1000,
       easing: "out",
       startup: true,
     },
   };
 
-  //  const dataBar = [
-  //     ["", "2021","2018", { role: 'style' }],
-  //     ["xAxis",14 ,25,"#1A1818"],
-
-  //   ];
   const dataBar = [
     [
       "Year",
@@ -53,16 +47,15 @@ export default function OperationalPerformance() {
   ];
 
   const optionsBar = {
-   
     title: "Turnover Rate",
     titleTextStyle: {
-      color: '#D8A115'
-  },  
-  animation: {
-    duration: 1000,
-    easing: "out",
-    startup: true,
-  },
+      color: "#D8A115",
+    },
+    animation: {
+      duration: 1000,
+      easing: "out",
+      startup: true,
+    },
     bars: "horizontal",
     bar: { groupWidth: "95%" },
     legend: { position: "none" },
@@ -83,7 +76,7 @@ export default function OperationalPerformance() {
               style={{ textAlign: "initial", whiteSpace: "nowrap" }}
               className="reveal fade-left"
             >
-              <h1>
+              <h1 style={{ fontSize: 60 }}>
                 <span style={{ color: "#a98445", fontWeight: "bold" }}>
                   Operational{" "}
                 </span>
@@ -98,7 +91,7 @@ export default function OperationalPerformance() {
       </section>
 
       <Row sm={"4"}>
-        <h5 className="bottomline p-2"> Our Human Resources </h5>
+        <h4 className="bottomline p-2"> Our Human Resources </h4>
       </Row>
 
       <section className="m-4">
@@ -134,7 +127,7 @@ export default function OperationalPerformance() {
                           alignItems: "center",
                         }}
                       >
-                        <img 
+                        <img
                           style={{
                             width: "15%",
                             height: "15%",
@@ -144,7 +137,6 @@ export default function OperationalPerformance() {
                           alt="Saudis"
                         />
                         <CountUp
-                         
                           start={0}
                           end={80}
                           suffix={"%"}
@@ -152,17 +144,20 @@ export default function OperationalPerformance() {
                           duration={3}
                         >
                           {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
-                      <span
-                        style={{
-                          fontSize: 100,
-                          fontWeight: "bolder",
-                          color: "#D8A115",
-                        }}
-                        ref={countUpRef}
-                      />
-                    </ReactVisibilitySensor>
-                  )}
+                            <ReactVisibilitySensor
+                              onChange={start}
+                              delayedCall={true}
+                            >
+                              <span
+                                style={{
+                                  fontSize: 100,
+                                  fontWeight: "bolder",
+                                  color: "#D8A115",
+                                }}
+                                ref={countUpRef}
+                              />
+                            </ReactVisibilitySensor>
+                          )}
                         </CountUp>
                       </div>
                       <p className="descCountUp">Saudis</p>
@@ -178,7 +173,7 @@ export default function OperationalPerformance() {
                           alignItems: "center",
                         }}
                       >
-                        <img 
+                        <img
                           style={{
                             width: "15%",
                             height: "15%",
@@ -199,18 +194,21 @@ export default function OperationalPerformance() {
                           decimals={0}
                           duration={3}
                         >
-                            {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
-                      <span
-                        style={{
-                          fontSize: 100,
-                          fontWeight: "bolder",
-                          color: "#D8A115",
-                        }}
-                        ref={countUpRef}
-                      />
-                    </ReactVisibilitySensor>
-                  )}
+                          {({ countUpRef, start }) => (
+                            <ReactVisibilitySensor
+                              onChange={start}
+                              delayedCall={true}
+                            >
+                              <span
+                                style={{
+                                  fontSize: 100,
+                                  fontWeight: "bolder",
+                                  color: "#D8A115",
+                                }}
+                                ref={countUpRef}
+                              />
+                            </ReactVisibilitySensor>
+                          )}
                         </CountUp>
                       </div>
                       <p className="descCountUp">Non-Saudis </p>
@@ -251,7 +249,7 @@ export default function OperationalPerformance() {
           <div className="container">
             {/* Title Section */}
             <div className="title-section mb-4" style={{ width: "60%" }}>
-              <h5 className="display-6">Competencies Of Recruitment</h5>
+              <h4 className="">Competencies Of Recruitment</h4>
               <hr />
               <p>Human Capital Transformation Program</p>
             </div>
@@ -306,118 +304,182 @@ export default function OperationalPerformance() {
         </div>
       </section>
 
-      <section className="m-4">
-      <div className="talent-development container">
-      <div>
-        <h3 className="text-left">Talent Development</h3>
-      </div>
-
-      <div className="row">
-
-        <div className="row row-style shadow-sm">
-          <div className="col-md-3 col-3 col-lg-3 col-sm-3 st ">
-            <div className="row">
-              <div className="col-3">
-                <img  src="/assets/images/row1.png" className="img-style" alt="Iamge"/>
-              </div>
-              <div className="col-9"> Training hours</div>
-            </div>
-          </div>
-          <div className="col-md-9 col-9 col-lg-9 col-sm-9 st ">
-            <div className="row ">
-              <div className="col-md-6 col-6 col-lg-6 col-sm-6">
-                <span> 16683</span>
-                <span> Hours</span>
-              </div>
-
-              <div className="col-md-6 col-6 col-lg-6 col-sm-6">
-                <span> 16683</span>
-                <span> Hours</span>
-              </div>
-            </div>
-          </div>
-
+      <section className="m-4 p-3" style={{ backgroundColor: "#f1f1f1" }}>
+        <div className="title-section mb-4" style={{ width: "60%" }}>
+          <h4>Talent Development</h4>
         </div>
 
-
-        <div className="row row-style shadow-sm">
-
-          <div className="col-md-3 col-3 col-lg-3 col-sm-3 st">
-            <div className="row">
-              <div className="col-3">
-                <img  src="/assets/images/row2.png" className="img-style" alt="Iamge"/>
-              </div>
-              <div className="col-9">Completion</div>
-            </div>{" "}
-          </div>
-          <div className="col-md-9 col-9 col-lg-9 col-sm-9 st">
-            <div className="row">
-              <div className="col-md-6 col-6 col-lg-6 col-sm-6">
-                <span> 16683</span>
-                <span> Hours</span>
+        <div className="talentd container-fluid p-3">
+          <div className="first-col d-flex justify-content-between flex-row ">
+            <div
+              className="img-icon left-side me-3 row"
+              style={{ backgroundColor: "transparent" }}
+            ></div>
+            <div
+              className=" d-flex flex-row  right-side"
+              style={{ backgroundColor: "transparent" }}
+            >
+              <div className=" w-50 ">
+                <h3>2021</h3>
               </div>
 
-              <div className="col-md-6 col-6 col-lg-6 col-sm-6">
-                <span> 16683</span>
-                <span> Hours</span>
+              <div className=" w-50">
+                <h3>2022</h3>
               </div>
             </div>
           </div>
-
-        </div>
-
-        <div className="row row-style shadow-sm">
-
-          <div className="col-md-3 col-3 col-lg-3 col-sm-3 st">
-            <div className="row">
-              <div className="col-3">
-                <img  src="/assets/images/row3.png" className="img-style" alt="Iamge"/>
+          <div className="first-col d-flex justify-content-between flex-row ">
+            <div className="img-icon left-side me-3 row">
+              <div className="col-6 col-md-4 col-lg-4 col-sm-12 col-12 text-center bg-img"></div>
+              <div className="col-6 col-md-8 col-lg-8 col-sm-12 col-12 text-center">
+                Traninig Hours
               </div>
-              <div className="col-9"> Trainee </div>
-            </div>{" "}
-          </div>
-          <div className="col-md-9 col-9 col-lg-9 col-sm-9 st">
-            <div className="row">
-              <div className="col-md-6 col-6 col-lg-6 col-sm-6">
-                <span> 16683</span>
-                <span> Hours</span>
+            </div>
+            <div className="second-col d-flex flex-row  right-side">
+              <span className="tr-shape"></span>
+
+              <div className="info-1 w-50 h-100">
+                <span className="me-3">16683</span>
+                <span>Hours</span>
               </div>
 
-              <div className="col-md-6 col-6 col-lg-6 col-sm-6">
-                <span> 16683</span>
-                <span> Hours</span>
+              <div className="info-2 w-50">
+                <span className="me-3">986.5</span>
+                <span>Hours</span>
               </div>
             </div>
           </div>
-
-        </div>
-
-        <div className="row row-style shadow-sm">
-
-          <div className="col-md-3 col-3 col-lg-3 col-sm-3 st">
-            <div className="row">
-              <div className="col-3">
-                <img  src="/assets/images/row4.png" className="img-style"alt="Iamge" />
+          <div className="first-col d-flex justify-content-between flex-row ">
+            <div className="img-icon left-side me-3 row">
+              <div className="col-6 col-md-4 col-lg-4 col-sm-12 col-12 text-center bg-sec-img"></div>
+              <div className="col-6 col-md-8 col-lg-8 col-sm-12 col-12 text-center">
+                Completion{" "}
               </div>
-              <div className="col-9"> Online Training</div>
-            </div>{" "}
+            </div>
+            <div className="second-col d-flex flex-row  right-side">
+              <span className="tr-shape"></span>
+
+              <div className="info-1 w-50 h-100">
+                <span className="me-3">174%</span>
+                <span>Percent</span>
+              </div>
+
+              <div className="info-2 w-50">
+                <span className="me-3">80%</span>
+                <span>Percent</span>
+              </div>
+            </div>
           </div>
-          <div className="col-md-9 col-9 col-lg-9 col-sm-9 st">
-            <div className="row">
-              <div className="col-md-6 col-6 col-lg-6 col-sm-6">
-                <span> 16683</span>
-                <span> Hours</span>
+          <div className="first-col d-flex justify-content-between flex-row ">
+            <div className="img-icon left-side me-3 row">
+              <div className="col-6 col-md-4 col-lg-4 col-sm-12 col-12 text-center bg-thrd-img"></div>
+              <div className="col-6 col-md-8 col-lg-8 col-sm-12 col-12 text-center">
+                Traninee
+              </div>
+            </div>
+            <div className="second-col d-flex flex-row  right-side">
+              <span className="tr-shape"></span>
+
+              <div className="info-1 w-50 h-100">
+                <span className="me-3">1908</span>
+                <span>Trainee</span>
               </div>
 
-              <div className="col-md-6 col-6 col-lg-6 col-sm-6">
-                <span> 16683</span>
-                <span> Hours</span>
+              <div className="info-2 w-50">
+                <span className="me-3">233</span>
+                <span>Trainee</span>
+              </div>
+            </div>
+          </div>
+          <div className="first-col d-flex justify-content-between flex-row ">
+            <div className="img-icon left-side me-3 row">
+              <div className="col-6 col-md-4 col-lg-4 col-sm-12 col-12 text-center bg-forth-img"></div>
+              <div className="col-6 col-md-8 col-lg-8 col-sm-12 col-12 text-center">
+                Online Training
+              </div>
+            </div>
+            <div className="second-col d-flex flex-row  right-side">
+              <span className="tr-shape"></span>
+
+              <div className="info-1 w-50 h-100">
+                <span className="me-3">3763</span>
+                <span>Hours</span>
+              </div>
+
+              <div className="info-2 w-50">
+                <span className="me-3">986.5</span>
+                <span>Hours</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+
+        <div className="title-section mb-4" style={{ width: "60%" }}>
+          <h4>Access to our Customers</h4>
+        </div>
+        <div className="row">
+                <div className="col" >
+                  <div className="shadow-sm p-3 mb-5 bg-body rounded-3" style={{ height: 120 }}>
+                    {" "}
+                    <div
+                      style={{
+                        display: "flex",
+                        alignContent: "center",
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img
+                        src={"/assets/images/Excellence.png"}
+                        className="img-fluid"
+                        alt="icon"
+                      />
+                      <p>Excellence in Organizational Communication</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col" >
+                  <div className="shadow-sm p-3 mb-5 bg-body rounded-3" style={{ height: 120 }}>
+                    {" "}
+                    <div
+                      style={{
+                        display: "flex",
+                        alignContent: "center",
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img
+                        src={"/assets/images/emarket.png"}
+                        className="img-fluid"
+                        alt="icon"
+                      />
+                      <p>Effective Marketing</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="shadow-sm p-3 mb-5 bg-body rounded-3" style={{ height: 120 }}>
+                    {" "}
+                    <div
+                      style={{
+                        display: "flex",
+                        alignContent: "center",
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img
+                        src={"/assets/images/digital.png"}
+                        className="img-fluid"
+                        alt="icon"
+                      />
+                      <p>Digital Marketing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+       
       </section>
     </Container>
   );

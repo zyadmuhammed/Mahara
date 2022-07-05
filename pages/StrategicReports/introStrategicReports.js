@@ -11,13 +11,13 @@ import Link from 'next/link';
     return (
         <div>
             <section>
-                    <img  src={'/assets/images/intro/003.png'} layout='responsive' alt="image" className="img-fluid" />
+                    <img  src={'/assets/images/intro/003.png'}  alt="image" className="img-fluid" />
                     <div className="titleIntro">
-                        <h1>
+                    <h1 style={{fontSize:60}}>
                         Strategic Report
                         </h1>
                         <br/>
-                        <h2>
+                        <h2 style={{fontSize:45}}>
                         Empowerment for the Future
                         </h2>
                     </div>

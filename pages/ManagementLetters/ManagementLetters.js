@@ -32,9 +32,9 @@ export default function ManagementLetters() {
             <div>
                 <Row>
                 <Col sm='4' style={{textAlign:'center'}} className='reveal fade-left'>
-                    <h1 style={{color:'#a98445'}}>Chairman&apos;s </h1>
+                    <h1 style={{color:'#a98445',fontSize:60}}>Chairman&apos;s </h1>
                     
-                    <h1 style={{color:'#415259'}}> Letters</h1>
+                    <h1 style={{color:'#415259',fontSize:60}}> Letters</h1>
                 </Col>
                 <Col sm='8'>
                 </Col>
@@ -72,7 +72,7 @@ export default function ManagementLetters() {
                     </div>
                    
                 </Col>
-                <Col lg='8' className="reveal fade-right">
+                <Col lg='8' className="reveal fade-right managelater">
                     <p>
                      Messrs./ “Maharah” Shareholders and Partners, On my own behalf and on behalf of the Board, I have the pleasure to present to you Maharah Human Resources Company Annual Report 2021, in which the Company continued to focus more on sustainable growth, more strategic and operational empowerment.
                     </p>
@@ -119,8 +119,8 @@ export default function ManagementLetters() {
            <div>
                 <Row>
                 <Col sm='4' style={{textAlign:'center'}} className='reveal fade-left'>
-                    <h1 style={{color:'#a98445'}}> Chief Executive Officer&apos;s </h1>
-                    <h1 style={{color:'#415259'}}> Letters</h1>
+                    <h1 style={{color:'#a98445',fontSize:60}}> Chief Executive Officer&apos;s </h1>
+                    <h1 style={{color:'#415259',fontSize:60}}> Letters</h1>
                 </Col>
                 <Col sm='8'>
                 </Col>
@@ -160,7 +160,7 @@ export default function ManagementLetters() {
                     </div>
                    
                 </Col>
-                <Col lg='8' className="reveal fade-right">
+                <Col lg='8' className="reveal fade-right managelater">
                     <p>
                     Messrs./ “Maharah” Shareholders and Partners, In light of the exceptional and tremendous efforts exerted by “Maharah” employees; the Company managed, in 2021, to overcome a number of challenges that resulted from the consequences of the COVID-19 pandemic over the past year in a flexible way that helped it to overcome such obstacles. The key objective of the Company was to restore the normal status before the pandemic, but the suspension of receiving the manpower from the biggest outsourcing countries most of the year prevented the Company from achieving such key objective. Despite the airport and airfield closures imposed upon such outsourcing countries, yet, the Company managed to launch a number of initiatives and provide quick solutions to maintain its operational efficiency and internal work model, to make the optimum use of the available cost-effective resources. However, the pandemic had a great and positive effect on the Company, as Company, due to facing such pandemic, was obliged to think outside the box and create new initiatives and procedures that helped to add to the growth of the sector instead of its shrinking. Such procedures led to the rise in the Company revenues in Q4 by 74% at SAR 39.27 million, despite the challenges we faced. 
                     </p>

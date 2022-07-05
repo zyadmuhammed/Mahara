@@ -71,7 +71,7 @@ export default function StrategicReports() {
               style={{ textAlign: "initial", whiteSpace: "nowrap" }}
               className="reveal fade-left"
             >
-              <h1>
+              <h1 style={{fontSize:60}}>
                 <span style={{ color: "#a98445", fontWeight: "bold" }}>
                   Strategic{" "}
                 </span>
@@ -259,7 +259,7 @@ export default function StrategicReports() {
             </div>
           </Row>
           <div className="row py-3">
-            <h3>Strategic pillars</h3>
+            <h4 >Strategic pillars</h4>
           </div>
           <div className="row">
             <div className="col border-end">
@@ -314,10 +314,10 @@ export default function StrategicReports() {
         <div>
           <Row sm={"6"}>
             <div className="col" style={{ width: "40%" }}>
-              <h5 className=" p-2" style={{ whiteSpace: "nowrap" }}>
+              <h4 className=" p-2" style={{ whiteSpace: "nowrap" }}>
                 {" "}
                 Operational Model{" "}
-              </h5>
+              </h4>
             </div>
           </Row>
           <div className="row d-flex justify-content-center">
@@ -436,7 +436,7 @@ export default function StrategicReports() {
         <>
           <div className="row">
             <div className="col">
-              <h3>Digital Transformation Strategy</h3>
+              <h4 >Digital Transformation Strategy</h4>
               <p>
                 Enhancement of digital footprint at the age led by the digital
                 revolution digital transformation is no longer an option.
@@ -488,7 +488,7 @@ export default function StrategicReports() {
             </div>
             <div className="row">
               <div className="col">
-                <h3>Digital Transformation Strategy</h3>
+                <h4>Acquisitions</h4>
               </div>
             </div>
             <div className="container">
@@ -511,7 +511,7 @@ export default function StrategicReports() {
                         style={{
                           fontSize: 100,
                           fontWeight: "bolder",
-                          color: "#A98445",
+                          color: "#D8A115",
                         }}
                         ref={countUpRef}
                       />
@@ -520,8 +520,8 @@ export default function StrategicReports() {
                         </CountUp>
                         <br />
                         <span className="descCountUp">
-                          <small>Acquisition Of</small>
-                          Spectra Support Services Company
+                          <small>Acquisition Of Spectra Support Services Company</small>
+                          
                         </span>
                       </div>
                     </div>
@@ -736,7 +736,7 @@ export default function StrategicReports() {
               </div>
             </div>
             <div className="row p-3">
-              <h5>Strategic Horizons Of 2022</h5>
+              <h4>Strategic Horizons Of 2022</h4>
               <div className="col-6">
                 <div className="row align-items-center">
                   <div className="col-1">
@@ -827,11 +827,11 @@ export default function StrategicReports() {
             <div>
               <Row sm={"4"}>
                 <div className="col">
-                  <h5 className="bottomline p-2"> Aspirations In 2022 </h5>
+                  <h4  className="bottomline p-2"> Aspirations In 2022 </h4>
                 </div>
               </Row>
               <div className="row py-3">
-                <h3>Strategic Objectives</h3>
+              <h4 >Strategic Objectives</h4>
               </div>
               <div className="row">
                 <div className="col">
@@ -1032,13 +1032,13 @@ export default function StrategicReports() {
             <div>
               <Row sm={"6"}>
                 <div className="col" style={{ width: "40%" }}>
-                  <h5
+                  <h4
                     className="bottomline p-2"
                     style={{ whiteSpace: "nowrap" }}
                   >
                     {" "}
                     Subsidiaries And Associates{" "}
-                  </h5>
+                  </h4>
                 </div>
               </Row>
               <div className="row">

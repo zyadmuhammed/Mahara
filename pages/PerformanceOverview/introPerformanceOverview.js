@@ -12,11 +12,11 @@ import Link from 'next/link';
             <section>
                     <img  src={'/assets/images/intro/002.png'}  alt="image" className='img-fluid' />
                     <div className="titleIntro">
-                        <h1>
+                        <h1 style={{fontSize:60}}>
                              Performance Overview
                         </h1>
                         <br/>
-                        <h2>
+                        <h2 style={{fontSize:45}}>
                              Of the Year 2021
                         </h2>
                     </div>

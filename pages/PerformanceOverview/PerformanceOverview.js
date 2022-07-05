@@ -64,7 +64,7 @@ export default function PerformanceOverview() {
               style={{ textAlign: "initial", whiteSpace: "nowrap" }}
               className="reveal fade-left"
             >
-              <h1>
+              <h1 style={{fontSize:60}}>
                 <span style={{ color: "#a98445", fontWeight: "bold" }}>
                   2021 Performance{" "}
                 </span>
@@ -79,7 +79,7 @@ export default function PerformanceOverview() {
       </section>
 
       <Row sm={"4"}>
-        <h5 className="bottomline p-2"> Financial Indicators </h5>
+        <h4  className="bottomline p-2"> Financial Indicators </h4>
       </Row>
       <section style={{ paddingTop: "3rem" }}>
         <div
@@ -429,7 +429,7 @@ export default function PerformanceOverview() {
         </div>
       </section>
       <Row sm={"4"}>
-        <h5 className="bottomline p-2"> Operational Performance </h5>
+        <h4 className="bottomline p-2"> Operational Performance </h4>
       </Row>
       <section className="m-4">
         <div className="mx-5 overflow-hidden">

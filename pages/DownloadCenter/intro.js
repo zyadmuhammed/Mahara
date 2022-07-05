@@ -12,11 +12,11 @@ import useTranslation from "next-translate/useTranslation";
             <section>
                     <img  src={'/assets/images/intro/008.png'}  alt="image" className="img-fluid" />
                     <div className="titleIntro">
-                        <h1>
+                        <h1 style={{fontSize:60}}>
                         Download Center
                         </h1>
                         <br/>
-                        <h2>
+                        <h2 style={{fontSize:45}}>
                         Full Report or Customized
                         </h2>
                     </div>

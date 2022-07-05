@@ -207,7 +207,7 @@ export default function FinancialPerformance() {
               style={{ textAlign: "initial", whiteSpace: "nowrap" }}
               className="reveal fade-left"
             >
-              <h1>
+              <h1 style={{fontSize:60}}>
                 <span style={{ color: "#a98445", fontWeight: "bold" }}>
                   Financial{" "}
                 </span>
@@ -222,7 +222,7 @@ export default function FinancialPerformance() {
       </section>
 
       <Row sm={"4"}>
-        <h5 className="bottomline p-2"> Quarterly Financial Results </h5>
+        <h4  className="bottomline p-2"> Quarterly Financial Results </h4>
       </Row>
 
       <section className="m-4">
@@ -293,7 +293,7 @@ export default function FinancialPerformance() {
         </div>
       </section>
       <Row sm={"4"}>
-        <h5 className="bottomline p-2"> 2021 Growth Rates </h5>
+        <h4  className="bottomline p-2"> 2021 Growth Rates </h4>
       </Row>
 
       <div>

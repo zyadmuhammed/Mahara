@@ -13,11 +13,11 @@ import Link from 'next/link';
             <img  src={'/assets/images/intro/001.png'} className='img-fluid' alt="ManagementLetters"  />
                     {/* <img  src={ManagementLetters} alt="ManagementLetters" layout='responsive' /> */}
                     <div className="titleIntro">
-                        <h1>
+                        <h1 style={{fontSize:60}}>
                              Management Letters
                         </h1>
                         <br/>
-                        <h2>
+                        <h2 style={{fontSize:45}}>
                              Chairman and CEO Letters
                         </h2>
                     </div>

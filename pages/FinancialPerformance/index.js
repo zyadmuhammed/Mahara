@@ -17,7 +17,7 @@ const Home = () => {
 
             </Fade>
           
-               <BottomTap DownloadLink="FinancialPerformance" titleNextPage="Download Center"/>
+               <BottomTap DownloadLink="FinancialPerformance" NextPage={"DownloadCenter"} titleNextPage="Download Center"/>
            
           
             
