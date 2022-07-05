@@ -72,7 +72,7 @@ export default function DownloadCenter() {
                   value="ManagementLetters"
                   onChange={handleChange}
                 />
-                <label for="ManagementLetters">Management Letters</label>
+                <label htmlFor="ManagementLetters">Management Letters</label>
               </div>
               <div className="p-3">
                 <input
@@ -82,7 +82,7 @@ export default function DownloadCenter() {
                   value="PerformanceOverview"
                   onChange={handleChange}
                 />
-                <label for="PerformanceOverview">Performance Overview</label>
+                <label htmlFor="PerformanceOverview">Performance Overview</label>
               </div>
 
               <div className="p-3">
@@ -93,7 +93,7 @@ export default function DownloadCenter() {
                   value="StrategicReports"
                   onChange={handleChange}
                 />
-                <label for="StrategicReports">Strategic Reports</label>
+                <label htmlFor="StrategicReports">Strategic Reports</label>
               </div>
               <div className="p-3">
                 <input
@@ -103,7 +103,7 @@ export default function DownloadCenter() {
                   value="ServicesSolutions"
                   onChange={handleChange}
                 />
-                <label for="ServicesSolutions">Services & Solutions </label>
+                <label htmlFor="ServicesSolutions">Services & Solutions </label>
               </div>
             </div>
             <div className="col">
@@ -115,7 +115,7 @@ export default function DownloadCenter() {
                   value="OperationalPerformance"
                   onChange={handleChange}
                 />
-                <label for="OperationalPerformance">
+                <label htmlFor="OperationalPerformance">
                   Operational Performance{" "}
                 </label>
               </div>
@@ -128,7 +128,7 @@ export default function DownloadCenter() {
                   value="SustainabilitySocialImpact"
                   onChange={handleChange}
                 />
-                <label for="SustainabilitySocialImpact">
+                <label htmlFor="SustainabilitySocialImpact">
                   Sustainability & Social Impact{" "}
                 </label>
               </div>
@@ -140,7 +140,7 @@ export default function DownloadCenter() {
                   value="FinancialPerformance"
                   onChange={handleChange}
                 />
-                <label for="FinancialPerformance">Financial Performance</label>
+                <label htmlFor="FinancialPerformance">Financial Performance</label>
               </div>
             </div>
           </div>
