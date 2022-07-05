@@ -13,7 +13,7 @@ export function SliderHome() {
           
                   <div>
                 
-             <Row className="homedesc rollIn" >
+             <Row className="homedesc" >
                  <p>{t("home_title_desc")}</p>
                 
                  <b>{t("home_desc1")}<br/> {t("home_desc2")}<br/> {t("home_desc3")}</b>
