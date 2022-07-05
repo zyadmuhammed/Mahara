@@ -13,15 +13,10 @@ import {
   CardText,
   CardTitle,
 } from "reactstrap";
-import Image from "next/image";
-import chairman from "../../public/assets/images/chairman.png";
-import chiefExecutive from "../../public/assets/images/chiefExecutive.png";
-import { FaUserTie } from "react-icons/fa";
 import CountUp from "react-countup";
 import { Chart } from "react-google-charts";
-import mission from "../../public/assets/images/mission.png";
-import vision from "../../public/assets/images/vision.png";
-import values from "../../public/assets/images/values.png";
+import ReactVisibilitySensor from "react-visibility-sensor";
+
 
 export const data = [
   ["", ""],
@@ -469,7 +464,7 @@ export default function StrategicReports() {
             <div className="row d-flex">
               <div className="col-6">
                 <img
-                  src="assets/images/image.png"
+                  src="/assets/images/image.png"
                   className="img-fluid"
                   alt="img"
                 />
