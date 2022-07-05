@@ -55,13 +55,13 @@ const Customizer = () => {
                    
                     </Offcanvas.Header>
                     <Offcanvas.Body onClick={handleClose} style={{display:'flex',justifyContent:'center',alignItems:'center' }}>
-                    <SmoothList delay={400} transitionDuration={100}>
+                    <SmoothList delay={100} transitionDuration={10}>
                <Row>
                     <Col className='menuList'>
                         <span className='circle' />
                         
                         <Link href={'/ManagementLetters'} passHref>
-                         <Col >Management Letters</Col>
+                         <Col className='linkmenu'>Management Letters</Col>
                         </Link>
                   </Col>
 
@@ -69,7 +69,7 @@ const Customizer = () => {
                         <span className='circle' />
                       
                         <Link href={'/OperationalPerformance'}>
-                         <Col >Operational Performance</Col>
+                         <Col className='linkmenu'>Operational Performance</Col>
                         </Link>
                   </Col>
 
@@ -79,14 +79,14 @@ const Customizer = () => {
                         <span className='circle' />
                        
                         <Link href={'/PerformanceOverview'}>
-                         <Col >Performance Overview</Col>
+                         <Col className='linkmenu'>Performance Overview</Col>
                         </Link>
                   </Col>
                   <Col className='menuList'>
                         <span className='circle' />
                        
                         <Link href={'/Sustainability_SocialImpact'}>
-                         <Col >Sustainability & Social impact</Col>
+                         <Col className='linkmenu'>Sustainability & Social impact</Col>
                         </Link>
                   </Col>
 
@@ -96,7 +96,7 @@ const Customizer = () => {
                         <span className='circle' />
                       
                         <Link href={'/StrategicReports'}>
-                         <Col >Strategic Reports</Col>
+                         <Col className='linkmenu'>Strategic Reports</Col>
                         </Link>
                   </Col>
 
@@ -104,7 +104,7 @@ const Customizer = () => {
                         <span className='circle' />
                         
                         <Link href={'/FinancialPerformance'}>
-                         <Col >Financial Performance</Col>
+                         <Col className='linkmenu'>Financial Performance</Col>
                         </Link>
                   </Col>
 
@@ -113,7 +113,7 @@ const Customizer = () => {
                <Col className='menuList'>
                         <span className='circle' />
                         <Link href={'/Services_Solution'}>
-                         <Col >Services & Solutions</Col>
+                         <Col className='linkmenu'>Services & Solutions</Col>
                         </Link>
                         
                         
@@ -122,7 +122,7 @@ const Customizer = () => {
                         <span className='circle' />
                       
                         <Link href={'/DownloadCenter'}>
-                         <Col >Download Center</Col>
+                         <Col className='linkmenu'>Download Center</Col>
                         </Link>
                   </Col>
 

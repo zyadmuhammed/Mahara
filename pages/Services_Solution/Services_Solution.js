@@ -9,6 +9,7 @@ import { Chart } from "react-google-charts";
 import * as Highcharts from 'highcharts/highmaps';
 import HighchartsReact from "highcharts-react-official";
 import mapDataWorld from '@highcharts/map-collection/countries/sa/sa-all.geo.json';
+import ReactVisibilitySensor from "react-visibility-sensor";
 
 export const data = [
   ["", ""],
@@ -344,18 +345,26 @@ export default function Services_Solution() {
                 <div className="col">
                   <span>
                     <CountUp
-                      style={{
-                        fontSize: "300%",
-                        fontWeight: "bolder",
-                        color: "#D8A115",
-                      }}
                       start={0}
                       end={500000}
                       prefix={"+"}
                       separator={","}
                       decimals={0}
                       duration={3}
-                    ></CountUp>
+                    >
+                       {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#D8A115",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                    </CountUp>
                   <p> Beneficiaries cutomers</p>
                     
                   </span>

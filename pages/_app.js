@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,Fragment } from 'react';
 import Router from 'next/router';
 import Head from 'next/head';
 import NProgress from 'nprogress';
@@ -75,14 +75,14 @@ function MyFunctionComponent({ children }) {
 
  function MyApp({ Component, pageProps },ref) {
   return (
-    <Container ref={ref}>
+    <Fragment ref={ref}>
       <MyFunctionComponent>
         <Component {...pageProps} />
         <Customizer />
         <Menu/>
       </MyFunctionComponent>
       {/* <ToastContainer /> */}
-    </Container>
+    </Fragment>
   )
 }
 export default React.forwardRef(MyApp);

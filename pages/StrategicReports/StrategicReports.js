@@ -503,17 +503,26 @@ export default function StrategicReports() {
                     <div className="col">
                       <div className="col">
                         <CountUp
-                          style={{
-                            fontSize: "300%",
-                            fontWeight: "bolder",
-                            color: "#A98445",
-                          }}
+                          
                           start={0}
                           end={90}
                           suffix={"%"}
                           decimals={0}
                           duration={3}
-                        ></CountUp>
+                        >
+                          {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#A98445",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                        </CountUp>
                         <br />
                         <span className="descCountUp">
                           <small>Acquisition Of</small>
@@ -594,17 +603,26 @@ export default function StrategicReports() {
                     <div className="col">
                       <div className="col">
                         <CountUp
-                          style={{
-                            fontSize: "300%",
-                            fontWeight: "bolder",
-                            color: "#A98445",
-                          }}
+                         
                           start={0}
                           end={85}
                           suffix={"%"}
                           decimals={0}
                           duration={3}
-                        ></CountUp>
+                        >
+                            {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#A98445",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                        </CountUp>
                         <br />
                         <span className="descCountUp">
                           <small>Acquisition Of</small>
@@ -686,17 +704,26 @@ export default function StrategicReports() {
                 style={{ flexDirection: "column", alignItems: "center" }}
               >
                 <CountUp
-                  style={{
-                    fontSize: "300%",
-                    fontWeight: "bolder",
-                    color: "#A98445",
-                  }}
+                
                   start={0}
                   end={40}
                   suffix={"%"}
                   decimals={0}
                   duration={3}
-                ></CountUp>
+                >
+                   {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#A98445",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                </CountUp>
                 <br />
 
                 <span className="descCountUp " style={{ textAlign: "center" }}>

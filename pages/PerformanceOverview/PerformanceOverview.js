@@ -1,9 +1,6 @@
 import react, { useEffect } from "react";
 import { Col, Container, Row } from "reactstrap";
-import Image from "next/image";
-import chairman from "../../public/assets/images/chairman.png";
-import chiefExecutive from "../../public/assets/images/chiefExecutive.png";
-import { FaUserTie } from "react-icons/fa";
+import ReactVisibilitySensor from "react-visibility-sensor";
 import CountUp from "react-countup";
 import { Chart } from "react-google-charts";
 
@@ -24,6 +21,11 @@ export const options = {
   slices: {
     0: { color: "#A98445" },
     1: { color: "#D8A115" },
+  },
+  animation: {
+    duration: 1000,
+    easing: "out",
+    startup: true,
   },
 };
 
@@ -48,6 +50,10 @@ export default function PerformanceOverview() {
   useEffect(() => {
     window.addEventListener("scroll", reveal);
   });
+
+  function onChange(isVisible) {
+    console.log("Element is now %s", isVisible ? "visible" : "hidden");
+  }
   return (
     <Container>
       <section style={{ paddingTop: "3rem" }} id="PerformanceOverview">
@@ -78,23 +84,27 @@ export default function PerformanceOverview() {
       <section style={{ paddingTop: "3rem" }}>
         <div
           style={{ display: "flex", alignItems: "flex-end" }}
-          className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3"
+          className="row row-cols-2 row-cols-lg-4 g-2 g-lg-3"
         >
           <div className="col">
             <span className="">Company Revenues</span>
             <div className="p-3 ">
               <span>
-                <CountUp
-                  style={{
-                    fontSize: "300%",
-                    fontWeight: "bolder",
-                    color: "#D8A115",
-                  }}
-                  start={0}
-                  end={1.3}
-                  decimals={1}
-                  duration={3}
-                ></CountUp>
+                <CountUp start={0} end={1.3} decimals={1} duration={3}>
+                  {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#D8A115",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                </CountUp>
+
                 <div className="bottomline2"></div>
                 <span className="descCountUp">Billion Saudi Riyals</span>
               </span>
@@ -104,17 +114,25 @@ export default function PerformanceOverview() {
             <div className="p-3 ">
               <span>
                 <CountUp
-                  style={{
-                    fontSize: "300%",
-                    fontWeight: "bolder",
-                    color: "#A98445",
-                  }}
                   start={0}
                   end={25}
                   suffix={"%"}
                   decimals={0}
                   duration={3}
-                ></CountUp>
+                >
+                  {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#A98445",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                </CountUp>
                 <div className="bottomline2"></div>
                 <span className="descCountUp">Return On Equity (ROE)</span>
               </span>
@@ -122,23 +140,23 @@ export default function PerformanceOverview() {
           </div>
 
           <div className="col">
-            <div className=" "></div>
-          </div>
-          <div className="col">
             <span className="">Total Assets</span>
             <div className="p-3 ">
               <span>
-                <CountUp
-                  style={{
-                    fontSize: "300%",
-                    fontWeight: "bolder",
-                    color: "#D8A115",
-                  }}
-                  start={0}
-                  end={1036}
-                  separator=","
-                  duration={3}
-                ></CountUp>
+                <CountUp start={0} end={1036} separator="," duration={3}>
+                  {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#D8A115",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                </CountUp>
                 <div className="bottomline2"></div>
                 <span className="descCountUp">Million Saudi Riyals</span>
               </span>
@@ -158,7 +176,20 @@ export default function PerformanceOverview() {
                   suffix={"%"}
                   decimals={0}
                   duration={3}
-                ></CountUp>
+                >
+                  {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#A98445",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                </CountUp>
                 <div className="bottomline2"></div>
                 <span className="descCountUp"> As Current Assets</span>
               </span>
@@ -168,17 +199,20 @@ export default function PerformanceOverview() {
             <span>Operating Profit</span>
             <div className="p-4 ">
               <span>
-                <CountUp
-                  style={{
-                    fontSize: "300%",
-                    fontWeight: "bolder",
-                    color: "#D8A115",
-                  }}
-                  start={0}
-                  end={146.7}
-                  decimals={1}
-                  duration={3}
-                ></CountUp>
+                <CountUp start={0} end={146.7} decimals={1} duration={3}>
+                  {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#D8A115",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                </CountUp>
                 <div className="bottomline2"></div>
                 <span className="descCountUp">Million Saudi Riyals</span>
               </span>
@@ -188,40 +222,49 @@ export default function PerformanceOverview() {
             <div className="p-4">
               <span>
                 <CountUp
-                  style={{
-                    fontSize: "300%",
-                    fontWeight: "bolder",
-                    color: "#A98445",
-                  }}
                   start={0}
                   end={97}
                   suffix={"%"}
                   decimals={0}
                   duration={3}
-                ></CountUp>
+                >
+                  {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#A98445",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                </CountUp>
                 <div className="bottomline2"></div>
                 <span className="descCountUp">Realized Profit Distributed</span>
               </span>
             </div>
           </div>
-          <div className="col">
-            <div className=""></div>
-          </div>
+
           <div className="col">
             <span>Net Income</span>
             <div className="p-4">
               <span>
-                <CountUp
-                  style={{
-                    fontSize: "300%",
-                    fontWeight: "bolder",
-                    color: "#D8A115",
-                  }}
-                  start={0}
-                  end={144.9}
-                  decimals={1}
-                  duration={3}
-                ></CountUp>
+                <CountUp start={0} end={144.9} decimals={1} duration={3}>
+                  {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#D8A115",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                </CountUp>
                 <div className="bottomline2"></div>
                 <span className="descCountUp">Million Saudi Riyals</span>
               </span>
@@ -241,7 +284,20 @@ export default function PerformanceOverview() {
                   suffix={"%"}
                   decimals={0}
                   duration={3}
-                ></CountUp>
+                >
+                  {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#A98445",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                </CountUp>
                 <div className="bottomline2"></div>
                 <span className="descCountUp">
                   Net Income Of Shareholders Of The Parent Company
@@ -265,7 +321,7 @@ export default function PerformanceOverview() {
             <div className="col-6">
               <Chart
                 chartType="PieChart"
-                width="100%"
+                width="400px"
                 height="400px"
                 data={data}
                 options={options}
@@ -284,7 +340,7 @@ export default function PerformanceOverview() {
                           alignItems: "center",
                         }}
                       >
-                        <img 
+                        <img
                           style={{
                             width: "15%",
                             height: "15%",
@@ -294,17 +350,28 @@ export default function PerformanceOverview() {
                           alt="Individuals Sector"
                         />
                         <CountUp
-                          style={{
-                            fontSize: "300%",
-                            fontWeight: "bolder",
-                            color: "#D8A115",
-                          }}
                           start={0}
                           end={72}
                           suffix={"%"}
                           decimals={0}
                           duration={3}
-                        ></CountUp>
+                        >
+                          {({ countUpRef, start }) => (
+                            <ReactVisibilitySensor
+                              onChange={start}
+                              delayedCall={true}
+                            >
+                              <span
+                                style={{
+                                  fontSize: 100,
+                                  fontWeight: "bolder",
+                                  color: "#D8A115",
+                                }}
+                                ref={countUpRef}
+                              />
+                            </ReactVisibilitySensor>
+                          )}
+                        </CountUp>
                       </div>
                       <p className="descCountUp">Individuals Sector</p>
                     </div>
@@ -319,7 +386,7 @@ export default function PerformanceOverview() {
                           alignItems: "center",
                         }}
                       >
-                        <img 
+                        <img
                           style={{
                             width: "15%",
                             height: "15%",
@@ -329,17 +396,28 @@ export default function PerformanceOverview() {
                           alt="Individuals Sector"
                         />
                         <CountUp
-                          style={{
-                            fontSize: "300%",
-                            fontWeight: "bolder",
-                            color: "#D8A115",
-                          }}
                           start={0}
                           end={28}
                           suffix={"%"}
                           decimals={0}
                           duration={3}
-                        ></CountUp>
+                        >
+                          {({ countUpRef, start }) => (
+                            <ReactVisibilitySensor
+                              onChange={start}
+                              delayedCall={true}
+                            >
+                              <span
+                                style={{
+                                  fontSize: 100,
+                                  fontWeight: "bolder",
+                                  color: "#D8A115",
+                                }}
+                                ref={countUpRef}
+                              />
+                            </ReactVisibilitySensor>
+                          )}
+                        </CountUp>
                       </div>
                       <p className="descCountUp">Corporate Sector </p>
                     </div>
@@ -359,16 +437,23 @@ export default function PerformanceOverview() {
             <div className="col-6">
               <div className="p-3  ">
                 <span>
-                  <CountUp
-                    style={{
-                      fontSize: "300%",
-                      fontWeight: "bolder",
-                      color: "#415259",
-                    }}
-                    start={0}
-                    end={900}
-                    duration={3}
-                  ></CountUp>
+                  <CountUp start={0} end={900} duration={3}>
+                    {({ countUpRef, start }) => (
+                      <ReactVisibilitySensor
+                        onChange={start}
+                        delayedCall={true}
+                      >
+                        <span
+                          style={{
+                            fontSize: 100,
+                            fontWeight: "bolder",
+                            color: "#415259",
+                          }}
+                          ref={countUpRef}
+                        />
+                      </ReactVisibilitySensor>
+                    )}
+                  </CountUp>
                 </span>
               </div>
               <span className="descCountUp">
@@ -379,17 +464,28 @@ export default function PerformanceOverview() {
               <div className="p-3 ">
                 <span>
                   <CountUp
-                    style={{
-                      fontSize: "300%",
-                      fontWeight: "bolder",
-                      color: "#723B1C",
-                    }}
                     start={0}
                     end={90000}
                     separator=","
                     decimals={0}
                     duration={3}
-                  ></CountUp>
+                  >
+                    {({ countUpRef, start }) => (
+                      <ReactVisibilitySensor
+                        onChange={start}
+                        delayedCall={true}
+                      >
+                        <span
+                          style={{
+                            fontSize: 100,
+                            fontWeight: "bolder",
+                            color: "#723B1C",
+                          }}
+                          ref={countUpRef}
+                        />
+                      </ReactVisibilitySensor>
+                    )}
+                  </CountUp>
                 </span>
               </div>
               <span className="descCountUp">
@@ -399,17 +495,23 @@ export default function PerformanceOverview() {
             <div className="col-6">
               <div className="p-3 ">
                 <span>
-                  <CountUp
-                    style={{
-                      fontSize: "300%",
-                      fontWeight: "bolder",
-                      color: "#242E40",
-                    }}
-                    start={0}
-                    end={160000}
-                    separator=","
-                    duration={3}
-                  ></CountUp>
+                  <CountUp start={0} end={160000} separator="," duration={3}>
+                    {({ countUpRef, start }) => (
+                      <ReactVisibilitySensor
+                        onChange={start}
+                        delayedCall={true}
+                      >
+                        <span
+                          style={{
+                            fontSize: 100,
+                            fontWeight: "bolder",
+                            color: "#242E40",
+                          }}
+                          ref={countUpRef}
+                        />
+                      </ReactVisibilitySensor>
+                    )}
+                  </CountUp>
                 </span>
               </div>
               <span className="descCountUp">
@@ -419,16 +521,23 @@ export default function PerformanceOverview() {
             <div className="col-6">
               <div className="p-3 ">
                 <span>
-                  <CountUp
-                    style={{
-                      fontSize: "300%",
-                      fontWeight: "bolder",
-                      color: "#D8A115",
-                    }}
-                    start={0}
-                    end={22}
-                    duration={3}
-                  ></CountUp>
+                  <CountUp start={0} end={22} duration={3}>
+                    {({ countUpRef, start }) => (
+                      <ReactVisibilitySensor
+                        onChange={start}
+                        delayedCall={true}
+                      >
+                        <span
+                          style={{
+                            fontSize: 100,
+                            fontWeight: "bolder",
+                            color: "#D8A115",
+                          }}
+                          ref={countUpRef}
+                        />
+                      </ReactVisibilitySensor>
+                    )}
+                  </CountUp>
                 </span>
               </div>
               <span className="descCountUp">
@@ -438,17 +547,23 @@ export default function PerformanceOverview() {
             <div className="col-6">
               <div className="p-3 ">
                 <span>
-                  <CountUp
-                    style={{
-                      fontSize: "300%",
-                      fontWeight: "bolder",
-                      color: "#A98445",
-                    }}
-                    start={0}
-                    end={120000}
-                    separator=","
-                    duration={3}
-                  ></CountUp>
+                  <CountUp start={0} end={120000} separator="," duration={3}>
+                    {({ countUpRef, start }) => (
+                      <ReactVisibilitySensor
+                        onChange={start}
+                        delayedCall={true}
+                      >
+                        <span
+                          style={{
+                            fontSize: 100,
+                            fontWeight: "bolder",
+                            color: "#A98445",
+                          }}
+                          ref={countUpRef}
+                        />
+                      </ReactVisibilitySensor>
+                    )}
+                  </CountUp>
                 </span>
               </div>
               <span className="descCountUp">
@@ -459,17 +574,23 @@ export default function PerformanceOverview() {
             <div className="col-6">
               <div className="p-3 ">
                 <span>
-                  <CountUp
-                    style={{
-                      fontSize: "300%",
-                      fontWeight: "bolder",
-                      color: "#242E40",
-                    }}
-                    start={0}
-                    end={50000}
-                    separator=","
-                    duration={3}
-                  ></CountUp>
+                  <CountUp start={0} end={50000} separator="," duration={3}>
+                    {({ countUpRef, start }) => (
+                      <ReactVisibilitySensor
+                        onChange={start}
+                        delayedCall={true}
+                      >
+                        <span
+                          style={{
+                            fontSize: 100,
+                            fontWeight: "bolder",
+                            color: "#242E40",
+                          }}
+                          ref={countUpRef}
+                        />
+                      </ReactVisibilitySensor>
+                    )}
+                  </CountUp>
                 </span>
               </div>
               <span className="descCountUp">

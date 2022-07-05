@@ -2,6 +2,7 @@
 import { Col, Container, Row } from "reactstrap";
 import CountUp from "react-countup";
 import { Chart } from "react-google-charts";
+import ReactVisibilitySensor from "react-visibility-sensor";
 
 
 export default function OperationalPerformance() {
@@ -23,6 +24,10 @@ export default function OperationalPerformance() {
     slices: {
       0: { color: "#A98445" },
       1: { color: "#D8A115" },
+    },animation: {
+      duration: 1000,
+      easing: "out",
+      startup: true,
     },
   };
 
@@ -139,17 +144,26 @@ export default function OperationalPerformance() {
                           alt="Saudis"
                         />
                         <CountUp
-                          style={{
-                            fontSize: "300%",
-                            fontWeight: "bolder",
-                            color: "#D8A115",
-                          }}
+                         
                           start={0}
                           end={80}
                           suffix={"%"}
                           decimals={0}
                           duration={3}
-                        ></CountUp>
+                        >
+                          {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#D8A115",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                        </CountUp>
                       </div>
                       <p className="descCountUp">Saudis</p>
                     </div>
@@ -184,7 +198,20 @@ export default function OperationalPerformance() {
                           suffix={"%"}
                           decimals={0}
                           duration={3}
-                        ></CountUp>
+                        >
+                            {({ countUpRef, start }) => (
+                    <ReactVisibilitySensor onChange={start} delayedCall={true}>
+                      <span
+                        style={{
+                          fontSize: 100,
+                          fontWeight: "bolder",
+                          color: "#D8A115",
+                        }}
+                        ref={countUpRef}
+                      />
+                    </ReactVisibilitySensor>
+                  )}
+                        </CountUp>
                       </div>
                       <p className="descCountUp">Non-Saudis </p>
                     </div>

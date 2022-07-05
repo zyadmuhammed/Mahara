@@ -31,3 +31,6 @@
   display: flex !important;
   opacity: .9;
  }
+ .linkmenu{
+  cursor: pointer;
+}
